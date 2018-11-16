@@ -1,24 +1,45 @@
-# README
+## Yamanoteテーブル
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+|Column|Type|Options|
+|------|----|-------|
+|@id|integer|
+|dc:date|integer|
+|@context|integer|
+|dct:valid|integer|
+|odpt:delay|integer|
+|odpt:index|integer|
+|owl:sameAs|integer|
+|odpt:railway|integer|
+|odpt:operator|integer|
+|odpt:toStation|integer|
+|odpt:trainType|integer|
+|odpt:fromStation|integer|
+|odpt:trainNumber|integer|
+|odpt:railDirection|integer|
+|odpt:carComposition|integer|
+|odpt:destinationStation|integer|
 
-Things you may want to cover:
 
-* Ruby version
+## Jobanテーブル
 
-* System dependencies
+|Column|Type|Options|
+|------|----|-------|
+|@id|integer|
+|dc:date|integer|
+|@context|integer|
+|dct:valid|integer|
+|odpt:delay|integer|
+|odpt:index|integer|
+|owl:sameAs|integer|
+|odpt:railway|integer|
+|odpt:operator|integer|
+|odpt:toStation|integer|
+|odpt:trainType|integer|
+|odpt:fromStation|integer|
+|odpt:trainNumber|integer|
+|odpt:railDirection|integer|
+|odpt:carComposition|integer|
+|odpt:destinationStation|integer|
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Association
