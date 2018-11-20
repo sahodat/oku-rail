@@ -67,7 +67,7 @@
 |month|integer||
 |week|integer|
 |day|integer|
-|ohur|integer|
+|hour|integer|
 
 ## calculation_result_jyobanテーブル
 
@@ -79,7 +79,7 @@
 |month|integer||
 |week|integer|
 |day|integer|
-|ohur|integer|
+|hour|integer|
 
 ### Association
 
