@@ -1,4 +1,4 @@
-## Yamanoteテーブル
+## opdt_Yamanoteテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -21,7 +21,7 @@
 |odpt:destinationStation|string|終着駅|
 
 
-## Jobanテーブル
+## opdt_Jobanテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -43,6 +43,43 @@
 |odpt:carComposition|integer| 編成|
 |odpt:destinationStation|string|終着駅|
 
+## station_name_yamateテーブル
 
+|Column|Type|Options|
+|------|----|-------|
+|@id|string|このデータのid|
+|station_name|string|null: false|
+
+## station_name_jyobanテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|@id|string|このデータのid|
+|station_name|string|null: false|
+
+## calculation_result_yamateテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|@id|string|このデータのid|
+|target|integer|駅間|
+|delay_ave|integer|遅れ平均|
+|month|integer||
+|week|integer|
+|day|integer|
+|ohur|integer|
+
+## calculation_result_jyobanテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|@id|string|このデータのid|
+|target|integer|駅間|
+|delay_ave|integer|遅れ平均|
+|month|integer||
+|week|integer|
+|day|integer|
+|ohur|integer|
 
 ### Association
+
