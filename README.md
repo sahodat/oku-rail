@@ -1,4 +1,4 @@
-## opdt_Yamanoteテーブル
+## opdt_Yamanotesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -21,7 +21,7 @@
 |destination_station|string|終着駅|
 
 
-## opdt_Jobanテーブル
+## opdt_Jobansテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -43,21 +43,21 @@
 |Composition|integer| 編成|
 |destination_station|string|終着駅|
 
-## station_name_yamateテーブル
+## station_name_yamatesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |@id|string|このデータのid|
 |station_name|string|null: false|
 
-## station_name_jyobanテーブル
+## station_name_jyobansテーブル
 
 |Column|Type|Options|
 |------|----|-------|
 |@id|string|このデータのid|
 |station_name|string|null: false|
 
-## calculation_result_yamateテーブル
+## calculation_result_yamatesテーブル
 
 |Column|Type|Options|
 |------|----|-------|
@@ -69,7 +69,7 @@
 |day|integer|
 |hour|integer|
 
-## calculation_result_jyobanテーブル
+## calculation_result_jyobansテーブル
 
 |Column|Type|Options|
 |------|----|-------|
