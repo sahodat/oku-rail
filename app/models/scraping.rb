@@ -57,12 +57,12 @@ require 'json'
 
       #   tmp3 = tmp2.sub(/T/,'')
       # date = tmp3.delete('-')
-      tmp = obj_array[date].sub(/ \"dc:date\"/,'')
-      tmp1 = tmp.sub(/=>/,'')
-      tmp2 = tmp1.delete('\"')
-      tmp3 = tmp2.sub(/09:00/,'')
-      tmp4 = tmp3.delete('+')
-    date = tmp4.sub(/T/,' ')
+        tmp = obj_array[date].sub(/ \"dc:date\"/,'')
+        tmp1 = tmp.sub(/=>/,'')
+        tmp2 = tmp1.delete('\"')
+        tmp3 = tmp2.sub(/09:00/,'')
+        tmp4 = tmp3.delete('+')
+      date = tmp4.sub(/T/,' ')
 
 
 
@@ -76,13 +76,12 @@ require 'json'
       #   tmp3 = tmp2.sub(/T/,'')
       # o_valid = tmp3.delete('-')
 
-      tmp = obj_array[o_valid].sub(/ \"dct:valid\"/,'')
-      tmp1 = tmp.sub(/=>/,'')
-      tmp2 = tmp1.delete('\"')
-      tmp3 = tmp2.sub(/09:00/,'')
-      tmp4 = tmp3.delete('+')
-    o_valid = tmp4.sub(/T/,' ')
-
+        tmp = obj_array[o_valid].sub(/ \"dct:valid\"/,'')
+        tmp1 = tmp.sub(/=>/,'')
+        tmp2 = tmp1.delete('\"')
+        tmp3 = tmp2.sub(/09:00/,'')
+        tmp4 = tmp3.delete('+')
+      o_valid = tmp4.sub(/T/,' ')
 
 
       delay = obj_array[delay].delete(' \"odpt:delay\"=>')   #遅れの表示
