@@ -1,0 +1,197 @@
+  [1m[35m (36.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (28.8ms)[0m  [1m[35mCREATE DATABASE `oku-rail_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE DATABASE `oku-rail_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (143.1ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (34.5ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (3.8ms)[0m  [1m[34mSELECT GET_LOCK('4298509436524971360', 0)[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+Migrating to CreateOpdtYamanotes (20181126060211)
+  [1m[35m (49.6ms)[0m  [1m[35mCREATE TABLE `opdt_yamanotes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `@id` varchar(255), `@type` varchar(255), `date` int, `@context` varchar(255), `valid` int, `delay` int, `opdt_index` int, `same_as` varchar(255), `railway` varchar(255), `operator` varchar(255), `to_station` varchar(255), `train_type` varchar(255), `from_station` varchar(255), `train_number` varchar(255), `direction` varchar(255), `composition` int, `destinantion_station` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20181126060211_create_opdt_yamanotes.rb:3
+  [1m[35m (2.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (4.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20181126060211')[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (17.5ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (2.6ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-11-26 06:12:20', '2018-11-26 06:12:20')[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT RELEASE_LOCK('4298509436524971360')[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-11-26 16:30:25 +0900
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (8.1ms)
+Completed 200 OK in 63ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-26 16:30:34 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (5.9ms)
+Completed 200 OK in 16ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.6ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (13.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (169.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `oku-rail_development`[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (4.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS `oku-rail_test`[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE DATABASE `oku-rail_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (4.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE DATABASE `oku-rail_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (2.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (68.3ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (40.9ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (18.4ms)[0m  [1m[34mSELECT GET_LOCK('4298509436524971360', 0)[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+Migrating to CreateOpdtYamanotes (20181126060211)
+  [1m[35m (81.7ms)[0m  [1m[35mCREATE TABLE `opdt_yamanotes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `o_id` varchar(255), `p_type` varchar(255), `date` datetime, `context` varchar(255), `o_valid` datetime, `delay` int, `opdt_index` int, `same_as` varchar(255), `railway` varchar(255), `operator` varchar(255), `to_station` varchar(255), `train_type` varchar(255), `from_station` varchar(255), `train_number` varchar(255), `direction` varchar(255), `composition` int, `destinantion_station` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20181126060211_create_opdt_yamanotes.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20181126060211')[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (3.1ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-11-28 08:10:36', '2018-11-28 08:10:36')[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('4298509436524971360')[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (6.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.`value` FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment'[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (69.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS `oku-rail_development`[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (3.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS `oku-rail_test`[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE DATABASE `oku-rail_development` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE DATABASE `oku-rail_test` DEFAULT CHARACTER SET `utf8`[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (30.0ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (28.2ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT GET_LOCK('4298509436524971360', 0)[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+Migrating to CreateOpdtYamanotes (20181126060211)
+  [1m[35m (64.2ms)[0m  [1m[35mCREATE TABLE `opdt_yamanotes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `o_id` varchar(255), `o_type` varchar(255), `date` datetime, `context` varchar(255), `o_valid` datetime, `delay` int, `opdt_index` int, `same_as` varchar(255), `railway` varchar(255), `operator` varchar(255), `to_station` varchar(255), `train_type` varchar(255), `from_station` varchar(255), `train_number` varchar(255), `direction` varchar(255), `composition` int, `destinantion_station` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  ↳ db/migrate/20181126060211_create_opdt_yamanotes.rb:3
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20181126060211')[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2018-11-28 08:13:53', '2018-11-28 08:13:53')[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (17.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('4298509436524971360')[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  ↳ /Users/tech-camp/.rbenv/versions/2.3.1/bin/rake:23

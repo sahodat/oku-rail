@@ -25,11 +25,11 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|**@id|string|このデータのid|
-|@type|string|交通手段|
+|**o_id|string|このデータのid|
+|o_type|string|交通手段|
 |**date|integer|計測開始時間|
-|@context|string|JSON-LD仕様に基づく @context のURL|
-|valid|integer|計測終了時間（５分ごとにデータ取得）|
+|context|string|JSON-LD仕様に基づく @context のURL|
+|o_valid|integer|計測終了時間（５分ごとにデータ取得）|
 |**delay|integer|遅れ（秒）|
 |odpt_index|integer| 駅の順序を表すリスト|
 |same_as|string|データに付与された固有識別子の別名|
