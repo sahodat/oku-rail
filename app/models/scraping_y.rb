@@ -1,4 +1,4 @@
-class Scraping < ApplicationRecord
+class Scraping_y < ApplicationRecord
 require 'net/http'
 require 'uri'
 require 'json'
