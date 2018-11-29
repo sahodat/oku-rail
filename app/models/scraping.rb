@@ -113,9 +113,11 @@ require 'json'
 
       composition = obj_array[composition].delete(' \"odpt:carComposition\"=>')
 
-        tmp = obj_array[destination].sub(/ \"odpt:destinationStation:\"=>\"odpt.Station:JR-East.Yamanote.:/,'')
-        tmp2 = tmp.sub(/\"/,'')   #[]のせいでうまくいかない
-       destination = tmp2.delete('[')
+        tmp = obj_array[destination].delete('\"')
+        tmp1 = tmp.delete('[]')
+        tmp2 = tmp1.sub(/ odpt:destinationStation=>odpt.Station:JR-East.Yamanote./,'')
+      destination = tmp2.delete('}')
+
       n = n + 1
       opdtyamanote = OpdtYamanote.new(o_id: id, date: date, context: context, delay: delay,opdt_index: opdt_index,same_as: sameas,railway: railway, operator: operator, to_station: tostation, train_type: traintype, from_station: fromstation,train_number:trainnumber, direction: direction,composition: composition,destinantion_station: destination, o_valid: o_valid, o_type: o_type)
       opdtyamanote.save
