@@ -19,7 +19,7 @@ class CreateOpdtJobans < ActiveRecord::Migration[5.2]
       t.integer :composition
       t.string :destinantion_station
 
-
+     t.timestamps
     end
   end
 end

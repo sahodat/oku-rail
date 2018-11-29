@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 2018_11_29_033926) do
     t.string "direction"
     t.integer "composition"
     t.string "destinantion_station"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "opdt_yamanotes", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
