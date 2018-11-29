@@ -5,9 +5,13 @@
 # It's helpful, but not entirely necessary to understand cron before proceeding.
 # http://en.wikipedia.org/wiki/Cron
 
+# require File.expand_path(File.dirname(__FILE__) + "/environment"
+set :environment, :development
+# set :environment, :production
+set :output, "log/cron_log.log"
+
 # Example:
 #
- set :output, "log/cron_log.log"
 #
 # every 2.hours do
 #   command "/usr/bin/some_great_command"
@@ -21,7 +25,7 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 1.minutes do
- runner 'Scraping_j.get_opdt_joban'
-  puts "a"
+every 5.minutes do
+  runner 'Scraping_j.get_opdt_joban'
+  runner 'Scraping_y.get_opdt_yamanote'
 end
