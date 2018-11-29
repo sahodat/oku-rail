@@ -3,7 +3,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |**o_id|string|このデータのid|
-|type|string|交通手段|
+|o_type|string|交通手段|
 |**date|datetime|計測開始時間|
 |context|string|JSON-LD仕様に基づく @context のURL|
 |o_valid|datetime|計測終了時間（５分ごとにデータ取得）|
@@ -26,7 +26,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |**o_id|string|このデータのid|
-|type|string|交通手段|
+|o_type|string|交通手段|
 |**date|datetime|計測開始時間|
 |context|string|JSON-LD仕様に基づく @context のURL|
 |o_valid|datetime|計測終了時間（５分ごとにデータ取得）|
