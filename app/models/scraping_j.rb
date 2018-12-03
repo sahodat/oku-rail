@@ -3,26 +3,16 @@ require 'net/http'
 require 'uri'
 require 'json'
 
-  def self.test
-    p "test"
-  end
 
   def self.get_opdt_joban
 
   url = URI.parse(URI.escape("https://api-tokyochallenge.odpt.org/api/v4/odpt:Train?acl:consumerKey=01415c9ddab724a44abd0895d9b41524a92765481aa5967e0d01449c7c6c6872&odpt:railway=odpt.Railway:JR-East.Joban"))
-
 
   res = Net::HTTP.start(url.host, url.port, use_ssl: true){|http|
       http.get(url.path + "?" + url.query);
   }
   obj = JSON.parse(res.body)
 
-    # n = 0
-    # while n < 30 do
-    #     p "#{n+1}番目"
-    #     p obj[n]
-    #     n = n+1
-    # end
 
     obj_str = obj.to_s
     obj_array = obj_str.split(",")
@@ -52,11 +42,6 @@ require 'json'
        tmp = obj_array[o_type].sub(/ "@type"=>"odpt./,'')
       o_type = tmp.sub(/"/,'')
 
-      #   tmp = obj_array[date].delete(' \"dc:date\"=>')  #時間の表示
-      #   tmp1 = tmp.sub(/0900/,'')
-
-      #   tmp3 = tmp2.sub(/T/,'')
-      # date = tmp3.delete('-')
         tmp = obj_array[date].sub(/ \"dc:date\"/,'')
         tmp1 = tmp.sub(/=>/,'')
         tmp2 = tmp1.delete('\"')
@@ -70,11 +55,6 @@ require 'json'
         tmp1 = tmp.sub(/\"/,'')
       context = tmp1.sub(/\"/,'')
 
-      #   tmp = obj_array[o_valid].delete(' \"dct:valid\"=>')  #時間の表示
-      #   tmp1 = tmp.sub(/0900/,'')
-      #   tmp2 = tmp1.delete('+')
-      #   tmp3 = tmp2.sub(/T/,'')
-      # o_valid = tmp3.delete('-')
 
         tmp = obj_array[o_valid].sub(/ \"dct:valid\"/,'')
         tmp1 = tmp.sub(/=>/,'')
@@ -108,7 +88,7 @@ require 'json'
 
       trainnumber = obj_array[trainnumber].delete(' \"odpt:trainNumber\"=>')
 
-        tmp = obj_array[direction].sub(/ \"odpt:railDirection\"=>\"odpt.RailDirection:/,'')  #進行方向の表示 ??innerloopしか取れてない？
+        tmp = obj_array[direction].sub(/ \"odpt:railDirection\"=>\"odpt.RailDirection:/,'')
       direction = tmp.sub(/\"/,'')
 
       composition = obj_array[composition].delete(' \"odpt:carComposition\"=>')
@@ -116,8 +96,8 @@ require 'json'
         tmp = obj_array[destination].delete('\"')
         tmp1 = tmp.delete('[]')
         tmp2 = tmp1.sub(/ odpt:destinationStation=>odpt.Station:JR-East.Joban./,'')
-
-      destination = tmp2.delete('}')
+        tmp3 = tmp2.sub(/apid./,'')
+      destination = tmp3.delete('}')
       n = n + 1
       opdtjoban = OpdtJoban.new(o_id: id, date: date, context: context, delay: delay,opdt_index: opdt_index,same_as: sameas,railway: railway, operator: operator, to_station: tostation, train_type: traintype, from_station: fromstation,train_number:trainnumber, direction: direction,composition: composition,destinantion_station: destination, o_valid: o_valid, o_type: o_type)
       opdtjoban.save

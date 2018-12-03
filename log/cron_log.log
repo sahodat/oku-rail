@@ -12438,3 +12438,21 @@ Run 'bin/rails runner -h' for help.
 
 undefined method `delete' for nil:NilClass
 Running via Spring preloader in process 44427
+Running via Spring preloader in process 44560
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 44561
+Running via Spring preloader in process 44725
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 44726
+Running via Spring preloader in process 44860
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 44859
