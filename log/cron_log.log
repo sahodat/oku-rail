@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-Running via Spring preloader in process 38390
-Please specify a valid ruby command or the path of a script to run.
-Run 'bin/rails runner -h' for help.
 
-uninitialized constant Scraping_j
-Running via Spring preloader in process 38389
-Please specify a valid ruby command or the path of a script to run.
-Run 'bin/rails runner -h' for help.
-
-uninitialized constant Scraping_y
-=======
 /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/application.rb:585:in `validate_secret_key_base': Missing `secret_key_base` for 'production' environment, set this string with `rails credentials:edit` (ArgumentError)
 	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/application.rb:432:in `secret_key_base'
 	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/application.rb:176:in `key_generator'
@@ -11909,3 +11898,543 @@ Run 'bin/rails runner -h' for help.
 
 undefined method `delete' for nil:NilClass
 Running via Spring preloader in process 39075
+Running via Spring preloader in process 39223
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 39224
+Running via Spring preloader in process 39357
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 39358
+Running via Spring preloader in process 39495
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 39496
+Running via Spring preloader in process 39629
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 39630
+Running via Spring preloader in process 39765
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 39766
+Running via Spring preloader in process 39905
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 39906
+Running via Spring preloader in process 40043
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 40042
+Running via Spring preloader in process 40261
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 40260
+Running via Spring preloader in process 40405
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 40406
+Running via Spring preloader in process 40538
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 40539
+Running via Spring preloader in process 40672
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 40673
+Running via Spring preloader in process 40808
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 40807
+Running via Spring preloader in process 40947
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 40948
+/Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:882:in `rescue in block in connect'/Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:882:in `rescue in block in connect': : Failed to open TCP connection to api-tokyochallenge.odpt.org:443 (getaddrinfo: nodename nor servname provided, or not known)Failed to open TCP connection to api-tokyochallenge.odpt.org:443 (getaddrinfo: nodename nor servname provided, or not known) ( (SocketErrorSocketError)
+)
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:879:in `block in connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:879:in `block in connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:91:in `block in timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:91:in `block in timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:878:in `connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:863:in `do_start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:852:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:878:in `connect'
+	from /Users/tech-camp/projects/oku-rail/app/models/scraping_y.rb:15:in `get_opdt_yamanote'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:863:in `do_start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:852:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/tech-camp/projects/oku-rail/app/models/scraping_j.rb:15:in `get_opdt_joban'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command/base.rb:65:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command.rb:46:in `invoke'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands.rb:18:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:65:in `register'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `block in require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command/base.rb:65:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command.rb:46:in `invoke'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands.rb:18:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:65:in `register'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `require'
+	from /Users/tech-camp/projects/oku-rail/bin/rails:9:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `block in load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `block in require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/tech-camp/projects/oku-rail/bin/rails:9:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `block in load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+Running via Spring preloader in process 41170
+Running via Spring preloader in process 41169
+/Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:882:in `rescue in block in connect': Failed to open TCP connection to api-tokyochallenge.odpt.org:443 (getaddrinfo: nodename nor servname provided, or not known) (SocketError)
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:879:in `block in connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:91:in `block in timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:878:in `connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:863:in `do_start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:852:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from /Users/tech-camp/projects/oku-rail/app/models/scraping_j.rb:15:in `get_opdt_joban'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command/base.rb:65:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command.rb:46:in `invoke'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands.rb:18:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:65:in `register'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `block in require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `require'
+	from /Users/tech-camp/projects/oku-rail/bin/rails:9:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `block in load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+Running via Spring preloader in process 41306
+/Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:882:in `rescue in block in connect': Failed to open TCP connection to api-tokyochallenge.odpt.org:443 (getaddrinfo: nodename nor servname provided, or not known) (SocketError)
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:879:in `block in connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:91:in `block in timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:878:in `connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:863:in `do_start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:852:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from /Users/tech-camp/projects/oku-rail/app/models/scraping_y.rb:15:in `get_opdt_yamanote'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command/base.rb:65:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command.rb:46:in `invoke'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands.rb:18:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:65:in `register'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `block in require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `require'
+	from /Users/tech-camp/projects/oku-rail/bin/rails:9:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `block in load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+Running via Spring preloader in process 41307
+Running via Spring preloader in process 41452
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 41451
+Running via Spring preloader in process 41659
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 41660
+Running via Spring preloader in process 41830
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 41831
+Running via Spring preloader in process 41997
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 41996
+Running via Spring preloader in process 42163
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 42162
+Running via Spring preloader in process 42294
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 42293
+Running via Spring preloader in process 42461
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 42462
+Running via Spring preloader in process 42632
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 42633
+Running via Spring preloader in process 42789
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 42790
+Running via Spring preloader in process 42936
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 42937
+Running via Spring preloader in process 43090
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 43091
+Running via Spring preloader in process 43223
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 43224
+Running via Spring preloader in process 43352
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 43353
+/Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:882:in `rescue in block in connect': Failed to open TCP connection to api-tokyochallenge.odpt.org:443 (getaddrinfo: nodename nor servname provided, or not known) (SocketError)
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:879:in `block in connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:91:in `block in timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:878:in `connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:863:in `do_start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:852:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from /Users/tech-camp/projects/oku-rail/app/models/scraping_y.rb:15:in `get_opdt_yamanote'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command/base.rb:65:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command.rb:46:in `invoke'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands.rb:18:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:65:in `register'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `block in require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `require'
+	from /Users/tech-camp/projects/oku-rail/bin/rails:9:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `block in load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+/Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:882:in `rescue in block in connect': Failed to open TCP connection to api-tokyochallenge.odpt.org:443 (getaddrinfo: nodename nor servname provided, or not known) (SocketError)
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:879:in `block in connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:91:in `block in timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:878:in `connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:863:in `do_start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:852:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from /Users/tech-camp/projects/oku-rail/app/models/scraping_j.rb:15:in `get_opdt_joban'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command/base.rb:65:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command.rb:46:in `invoke'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands.rb:18:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:65:in `register'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `block in require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `require'
+	from /Users/tech-camp/projects/oku-rail/bin/rails:9:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `block in load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+Running via Spring preloader in process 43497
+Running via Spring preloader in process 43498
+/Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:882:in `rescue in block in connect': Failed to open TCP connection to api-tokyochallenge.odpt.org:443 (getaddrinfo: nodename nor servname provided, or not known) (SocketError)
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:879:in `block in connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:91:in `block in timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:878:in `connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:863:in `do_start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:852:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from /Users/tech-camp/projects/oku-rail/app/models/scraping_j.rb:15:in `get_opdt_joban'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command/base.rb:65:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command.rb:46:in `invoke'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands.rb:18:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:65:in `register'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `block in require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `require'
+	from /Users/tech-camp/projects/oku-rail/bin/rails:9:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `block in load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+/Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:882:in `rescue in block in connect': Failed to open TCP connection to api-tokyochallenge.odpt.org:443 (getaddrinfo: nodename nor servname provided, or not known) (SocketError)
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:879:in `block in connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:91:in `block in timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:878:in `connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:863:in `do_start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:852:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from /Users/tech-camp/projects/oku-rail/app/models/scraping_y.rb:15:in `get_opdt_yamanote'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command/base.rb:65:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command.rb:46:in `invoke'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands.rb:18:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:65:in `register'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `block in require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `require'
+	from /Users/tech-camp/projects/oku-rail/bin/rails:9:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `block in load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+Running via Spring preloader in process 43605
+Running via Spring preloader in process 43606
+/Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:882:in `rescue in block in connect'/Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:882:in `rescue in block in connect': Failed to open TCP connection to api-tokyochallenge.odpt.org:443 (getaddrinfo: nodename nor servname provided, or not known) (SocketError)
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:879:in `block in connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:91:in `block in timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:878:in `connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:863:in `do_start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:852:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from /Users/tech-camp/projects/oku-rail/app/models/scraping_y.rb:15:in `get_opdt_yamanote'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command/base.rb:65:in `perform'
+: Failed to open TCP connection to api-tokyochallenge.odpt.org:443 (getaddrinfo: nodename nor servname provided, or not known)	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command.rb:46:in `invoke'
+ (	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands.rb:18:in `<main>'
+SocketError	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+)
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:879:in `block in connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:91:in `block in timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:65:in `register'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/timeout.rb:101:in `timeout'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:878:in `connect'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:863:in `do_start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `block in require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:852:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/net/http.rb:584:in `start'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `require'
+	from /Users/tech-camp/projects/oku-rail/app/models/scraping_j.rb:15:in `get_opdt_joban'
+	from /Users/tech-camp/projects/oku-rail/bin/rails:9:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `eval'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands/runner/runner_command.rb:41:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/command.rb:27:in `run'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `block in load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor/invocation.rb:126:in `invoke_command'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/thor-0.20.3/lib/thor.rb:387:in `dispatch'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command/base.rb:65:in `perform'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/command.rb:46:in `invoke'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/railties-5.2.1/lib/rails/commands.rb:18:in `<main>'
+	from -e:1:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:21:in `block in require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/loaded_features_index.rb:65:in `register'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:20:in `require_with_bootsnap_lfi'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:29:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `block in require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:287:in `require'
+	from /Users/tech-camp/projects/oku-rail/bin/rails:9:in `<main>'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/bootsnap-1.3.2/lib/bootsnap/load_path_cache/core_ext/kernel_require.rb:50:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `block in load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:253:in `load_dependency'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activesupport-5.2.1/lib/active_support/dependencies.rb:281:in `load'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from /Users/tech-camp/.rbenv/versions/2.3.1/lib/ruby/2.3.0/rubygems/core_ext/kernel_require.rb:55:in `require'
+	from -e:1:in `<main>'
+Running via Spring preloader in process 43741
+Running via Spring preloader in process 43740
+Running via Spring preloader in process 44036
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 44035
+Running via Spring preloader in process 44166
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 44165
+Running via Spring preloader in process 44296
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 44295
+Running via Spring preloader in process 44428
+Please specify a valid ruby command or the path of a script to run.
+Run 'bin/rails runner -h' for help.
+
+undefined method `delete' for nil:NilClass
+Running via Spring preloader in process 44427

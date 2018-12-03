@@ -1,4 +1,4 @@
-class Scraping_j < ApplicationRecord
+class Scraping_j3 < ApplicationRecord
 require 'net/http'
 require 'uri'
 require 'json'
@@ -9,7 +9,7 @@ require 'json'
 
   def self.get_opdt_joban
 
-  url = URI.parse(URI.escape("https://api-tokyochallenge.odpt.org/api/v4/odpt:Train?acl:consumerKey=01415c9ddab724a44abd0895d9b41524a92765481aa5967e0d01449c7c6c6872&odpt:railway=odpt.Railway:JR-East.Joban"))
+  url = URI.parse(URI.escape("https://api-tokyochallenge.odpt.org/api/v4/odpt:Train?acl:consumerKey=01415c9ddab724a44abd0895d9b41524a92765481aa5967e0d01449c7c6c6872&odpt:railway=odpt.Railway:JR-East.JobanRapid"))
 
 
   res = Net::HTTP.start(url.host, url.port, use_ssl: true){|http|
@@ -97,13 +97,13 @@ require 'json'
         tmp = obj_array[operator].sub(/ \"odpt:operator\"=>\"odpt.Operator:/,'')
       operator = tmp.sub(/\"/,'')
 
-        tmp = obj_array[tostation].sub(/ \"odpt:toStation\"=>\"odpt.Station:JR-East.Joban./,'')
+        tmp = obj_array[tostation].sub(/ \"odpt:toStation\"=>\"odpt.Station:JR-East.JobanRapid./,'')
       tostation = tmp.sub(/\"/,'')
 
         tmp = obj_array[traintype].sub(/ \"odpt:trainType\"=>\"odpt.TrainType:/,'')
       traintype = tmp.sub(/\"/,'')
 
-        tmp = obj_array[fromstaiton].sub(/ \"odpt:fromStation\"=>\"odpt.Station:JR-East.Joban./,'') #出発駅の表示
+        tmp = obj_array[fromstaiton].sub(/ \"odpt:fromStation\"=>\"odpt.Station:JR-East.JobanRapid./,'') #出発駅の表示
      fromstation = tmp.sub(/\"/,'')
 
       trainnumber = obj_array[trainnumber].delete(' \"odpt:trainNumber\"=>')
@@ -115,8 +115,7 @@ require 'json'
 
         tmp = obj_array[destination].delete('\"')
         tmp1 = tmp.delete('[]')
-        tmp2 = tmp1.sub(/ odpt:destinationStation=>odpt.Station:JR-East.Joban./,'')
-
+        tmp2 = tmp1.sub(/ odpt:destinationStation=>odpt.Station:/,'')
       destination = tmp2.delete('}')
       n = n + 1
       opdtjoban = OpdtJoban.new(o_id: id, date: date, context: context, delay: delay,opdt_index: opdt_index,same_as: sameas,railway: railway, operator: operator, to_station: tostation, train_type: traintype, from_station: fromstation,train_number:trainnumber, direction: direction,composition: composition,destinantion_station: destination, o_valid: o_valid, o_type: o_type)

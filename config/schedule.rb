@@ -27,5 +27,7 @@ set :output, "log/cron_log.log"
 
 every 5.minutes do
   runner 'Scraping_j.get_opdt_joban'
+  runner 'Scraping_j2.get_opdt_joban'
+  runner 'Scraping_j3.get_opdt_joban'
   runner 'Scraping_y.get_opdt_yamanote'
 end
