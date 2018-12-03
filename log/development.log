@@ -7785,3 +7785,241 @@ Migrating to CreateOpdtJobans (20181129033926)
   ↳ app/models/scraping_y.rb:123
   [1m[35m (5.8ms)[0m  [1m[35mCOMMIT[0m
   ↳ app/models/scraping_y.rb:123
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/models/scraping_y.rb:105
+  [1m[35m (4.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  ↳ app/models/scraping_j.rb:102
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[36mOpdtJoban Create (0.6ms)[0m  [1m[32mINSERT INTO `opdt_jobans` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES ('9f72515c-1055-4315-87b-218553c57f6c', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Joban.1159M', 'Joban', 'JR-East', 'Ishioka', 'JR-East.Local', 'Takahama', '1159M', 'Outbound', 5, 'Katsuta', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[36mOpdtYamanote Create (0.5ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES ('68339fc-943a-48a-a42b-04c991e8fea1', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Yamanote.1114G', 'Yamanote', 'JR-East', 'Meguro', 'JR-East.Local', 'Ebisu', '1114G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (6.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (11.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtJoban Create (1.3ms)[0m  [1m[32mINSERT INTO `opdt_jobans` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 278464b9-7a7-4875-988b-796b88542bf', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Joban.1165M', 'Joban', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Ushiku', '1165M', 'Outbound', 15, 'Tsuchiura', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[36mOpdtYamanote Create (0.4ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' bcee851a-3797-4177-a32-51960696a3f', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 2, 'Train:JR-East.Yamanote.1150G', 'Yamanote', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Shibuya', '1150G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_j.rb:103
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtJoban Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_jobans` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' a06faf5c-5e55-4f65-8818-b041f1a1f394', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Joban.1182M', 'Joban', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Tsuchiura', '1182M', 'Inbound', 15, 'Shinagawa', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[36mOpdtYamanote Create (0.5ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 3a1aa362-6046-4069-b988-b0b7f0604690', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 3, 'Train:JR-East.Yamanote.1128G', 'Yamanote', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Yoyogi', '1128G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtJoban Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_jobans` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 4765fe9-e569-4be1-8774-faf9b39b3a6', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Joban.380M', 'Joban', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Ushiku', '380M', 'Inbound', 10, 'Ueno', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[36mOpdtYamanote Create (0.4ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 47f7f57-c6a-40b2-a5b4-98e7697a3f5', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Yamanote.1172G', 'Yamanote', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'ShinOkubo', '1172G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (4.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_j.rb:103
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.4ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' ca125e5-f11e-4248-876f-651eb281f09', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 2, 'Train:JR-East.Yamanote.1130G', 'Yamanote', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Mejiro', '1130G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  [1m[36mOpdtJoban Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_jobans` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' b40c8320-c66-4689-9f7e-2f4ac58489', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Joban.386M', 'Joban', 'JR-East', 'Ishioka', 'JR-East.Local', 'Hatori', '386M', 'Inbound', 10, 'Ueno', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_j.rb:103
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[36mOpdtYamanote Create (0.8ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' c70caf72-5c97-4224-b70f-962a27a7738', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Yamanote.1154G', 'Yamanote', 'JR-East', 'Ikebukuro', 'JR-East.Local', 'Otsuka', '1154G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtJoban Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_jobans` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 303813-46ea-40a3-8848-0c2863c4589', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Joban.363M', 'Joban', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Tsuchiura', '363M', 'Outbound', 10, 'Katsuta', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_j.rb:103
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtJoban Create (0.4ms)[0m  [1m[32mINSERT INTO `opdt_jobans` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 801ec89-722-48f2-9f9-a4c90a9602a7', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Joban.72M', 'Joban', 'JR-East', 'Arakawaoki', 'JR-East.LimitedExpress', 'Tsuchiura', '72M', 'Inbound', 10, 'Shinagawa', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  [1m[36mOpdtYamanote Create (0.4ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 866c93c0-9632-4178-a222-8f36bcf34ca', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 2, 'Train:JR-East.Yamanote.1106G', 'Yamanote', 'JR-East', 'Sugamo', 'JR-East.Local', 'Komagome', '1106G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[36mOpdtYamanote Create (0.4ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' ce787687-a916-42c5-be4b-65e92cfb285', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Yamanote.1108G', 'Yamanote', 'JR-East', 'Tabata', 'JR-East.Local', 'NishiNippori', '1108G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtJoban Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_jobans` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' f2e37285-171c-4eeb-8338-19c80466521', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Joban.59M', 'Joban', 'JR-East', 'Hatori', 'JR-East.LimitedExpress', 'Ishioka', '59M', 'Outbound', 10, 'Katsuta', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  ↳ app/models/scraping_j.rb:103
+  [1m[36mOpdtYamanote Create (0.4ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' a99ffc10-60bc-4ea2-be6b-c23a1272557', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Yamanote.1126G', 'Yamanote', 'JR-East', 'Osaki', 'JR-East.Local', 'Gotanda', '1126G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtJoban Create (2.5ms)[0m  [1m[32mINSERT INTO `opdt_jobans` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 03548c6f-9710-4e3f-b7e6-645a18c1ce', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Joban.11M', 'Joban', 'JR-East', 'Fujishiro', 'JR-East.LimitedExpress', 'Toride', '11M', 'Outbound', 10, 'Iwaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (4.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (3.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  ↳ app/models/scraping_j.rb:103
+  [1m[35m (2.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.5ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 92690f62-b52-48ca-a2e2-47f29499737e', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 60, 1, 'Train:JR-East.Yamanote.1200G', 'Yamanote', 'JR-East', 'Uguisudani', 'JR-East.Local', 'Ueno', '1200G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (40.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (6.2ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 8ee703c8-ce05-4b7e-9f94-0c263342524', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 180, 1, 'Train:JR-East.Yamanote.1222G', 'Yamanote', 'JR-East', 'Kanda', 'JR-East.Local', 'Tokyo', '1222G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.4ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 9e60c53-269e-42e6-ab33-8756bef8180b', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 60, 2, 'Train:JR-East.Yamanote.1210G', 'Yamanote', 'JR-East', 'Tokyo', 'JR-East.Local', 'Yurakucho', '1210G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 4ea569aa-ef9f-44e3-98f-ff6c5c0c3977', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 3, 'Train:JR-East.Yamanote.1224G', 'Yamanote', 'JR-East', 'Yurakucho', 'JR-East.Local', 'Shimbashi', '1224G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 650a2b3b-8e00-44bc-9cf-ccbf3555f85', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Yamanote.1212G', 'Yamanote', 'JR-East', 'Hamamatsucho', 'JR-East.Local', 'Tamachi', '1212G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.4ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' a590a74f-1356-4eb4-b852-7a275356af', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 0, 1, 'Train:JR-East.Yamanote.1260G', 'Yamanote', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Shinagawa', '1260G', 'InnerLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' f0b26f-8bc7-4a8a-ba50-32a070a1ae7', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 660, 1, 'Train:JR-East.Yamanote.1107G', 'Yamanote', 'JR-East', 'Hamamatsucho', 'JR-East.Local', 'Shimbashi', '1107G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.8ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' e0f2312-f98c-43f0-b1-fc070a5bca', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 660, 2, 'Train:JR-East.Yamanote.1109G', 'Yamanote', 'JR-East', 'Yurakucho', 'JR-East.Local', 'Tokyo', '1109G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:02', '2018-12-03 03:30:02')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 18e57eeb-7c7b-416e-bbef-23af5580fca', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 540, 3, 'Train:JR-East.Yamanote.1129G', 'Yamanote', 'JR-East', 'Tokyo', 'JR-East.Local', 'Kanda', '1129G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 05c7f20c-8c7f-47e-b1cf-a9a7f288afc', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 360, 4, 'Train:JR-East.Yamanote.1111G', 'Yamanote', 'JR-East', 'Kanda', 'JR-East.Local', 'Akihabara', '1111G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 348f7ffc-1a43-4390-a47c-253ceb8e171', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 300, 5, 'Train:JR-East.Yamanote.1133G', 'Yamanote', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Okachimachi', '1133G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 8180c89e-1257-448b-9cb-5b1383b3cb47', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 180, 1, 'Train:JR-East.Yamanote.1173G', 'Yamanote', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Nippori', '1173G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 36a14716-40e7-4c84-9e15-3b7e7f63b546', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 480, 1, 'Train:JR-East.Yamanote.1125G', 'Yamanote', 'JR-East', 'Osaki', 'JR-East.Local', 'Shinagawa', '1125G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 16822a4a-a553-4a22-8877-b00c2741e80', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 180, 1, 'Train:JR-East.Yamanote.1137G', 'Yamanote', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Komagome', '1137G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 16a57b5-8c67-4682-a579-8f4c19495e6', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 180, 2, 'Train:JR-East.Yamanote.1115G', 'Yamanote', 'JR-East', 'Sugamo', 'JR-East.Local', 'Otsuka', '1115G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 84c9eb53-64e6-4c0-8f96-0327b5e4677f', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 240, 1, 'Train:JR-East.Yamanote.1135G', 'Yamanote', 'JR-East', 'Ueno', 'JR-East.Local', 'Uguisudani', '1135G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.6ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 5a859e36-039-4757-9c46-37cbf1431f16', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 120, 1, 'Train:JR-East.Yamanote.1117G', 'Yamanote', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Ikebukuro', '1117G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.4ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 121a9eba-c02c-441c-827a-8ffb5f8672', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 240, 1, 'Train:JR-East.Yamanote.1201G', 'Yamanote', 'JR-East', 'Takadanobaba', 'JR-East.Local', 'ShinOkubo', '1201G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' 399a36-289f-4578-ba45-ec930cc93af', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 360, 1, 'Train:JR-East.Yamanote.1203G', 'Yamanote', 'JR-East', 'Yoyogi', 'JR-East.Local', 'Harajuku', '1203G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' cb3b3591-c8-4ac-aac5-2a014c014cb6', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 420, 2, 'Train:JR-East.Yamanote.1221G', 'Yamanote', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Ebisu', '1221G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[36mOpdtYamanote Create (0.3ms)[0m  [1m[32mINSERT INTO `opdt_yamanotes` (`o_id`, `o_type`, `date`, `context`, `o_valid`, `delay`, `opdt_index`, `same_as`, `railway`, `operator`, `to_station`, `train_type`, `from_station`, `train_number`, `direction`, `composition`, `destinantion_station`, `created_at`, `updated_at`) VALUES (' fc4ea9f3-11-45f-92cb-5f49f01b4b70', 'Train', '2018-12-03 12:26:35', 'http://vocab.odpt.org/context_odpt.jsonld', '2018-12-03 12:31:35', 360, 3, 'Train:JR-East.Yamanote.1271G', 'Yamanote', 'JR-East', ' odpt:toStation\"=>nil', 'JR-East.Local', 'Meguro', '1271G', 'OuterLoop', 11, 'Osaki', '2018-12-03 03:30:03', '2018-12-03 03:30:03')[0m
+  ↳ app/models/scraping_y.rb:106
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/scraping_y.rb:106
