@@ -51,5 +51,5 @@ production:
   <<: *default
   database: oku-rail_production
   username: root
-  password: <%= ENV['OKU-RAIL_DATABASE_PASSWORD'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
