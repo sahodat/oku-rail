@@ -1,0 +1,132 @@
+// Place all the styles related to the delay controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.contents{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+}
+h2{
+font-size: 15px;
+position: absolute;
+top: 150px;
+left:100px;
+}
+h3{
+font-size: 15px;
+position: absolute;
+top: 150px;
+right: 100px;
+}
+h4{
+font-size: 30px;
+position: absolute;
+top: 75px;
+left: 100px;
+}
+h5{
+font-size: 30px;
+position: absolute;
+top: 65px;
+right: 110px;
+}
+/*駅名*/
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 19px;
+  transform:rotate(-34deg);
+  position: absolute;
+  top:255px;
+  left: 20px;
+}
+li1 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 19px;
+  transform:rotate(-34deg);
+  position: absolute;
+  top:265px;
+  left: 95px;
+}
+li2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 19px;
+  transform:rotate(-34deg);
+  position: absolute;
+  top:300px;
+  left: 155px;
+}
+li3 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 19px;
+  transform:rotate(-34deg);
+  position: absolute;
+  top:345px;
+  left: 230px;
+}
+li4 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 19px;
+  transform:rotate(-34deg);
+  position: absolute;
+  top:400px;
+  left: 260px;
+}
+li5 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 19px;
+  transform:rotate(-34deg);
+  position: absolute;
+  top:465px;
+  left: 290px;
+}
+li6 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 19px;
+  transform:rotate(-34deg);
+  position: absolute;
+  top:545px;
+  left: 310px;
+}
+.right{
+  clear: both;
+  position: absolute;
+  float: right;
+  right: 20px;
+  z-index: 20;
+}
+
+/*扇*/
+
+p.fan {
+  position: absolute;
+  bottom: -16px;
+  width:280px; height:280px; background-color:white;
+  border:solid 10px #A5D6A7;
+  border-radius: 0% 100% 0% 0%;
+}
+
