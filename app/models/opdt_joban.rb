@@ -1,2 +1,0 @@
-class OpdtJoban < ApplicationRecord
-end

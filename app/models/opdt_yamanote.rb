@@ -1,3 +1,0 @@
-class OpdtYamanote < ApplicationRecord
-
-end
