@@ -18,9 +18,6 @@ set :keep_releases, 5
 
 after 'deploy:publishing', 'deploy:restart'
 namespace :deploy do
-  task :start do
-    run "bundle exec unicorn_rails -c #{current_path}/config/unicorn.rb -E production -D"
-  end
 
   task :restart do
     invoke 'unicorn:restart'
