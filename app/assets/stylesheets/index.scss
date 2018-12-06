@@ -18,17 +18,19 @@ html, body {
   /*padding-top: 60px;*/
 }
 
-.li1{
+
+.vcenterlineblack{
   position: fixed;
   background-color: black;
   height: 100%;
   width: 45px;
   float: left;
-  left: 43%;
+  // left: 43%;
+  left: 176px;
   z-index: 3;
   /*clear: both;*/
 }
-.li3{
+.vcenterline{
   background-color: #388E3C;
   height: 100%;
   width: 30px;
@@ -40,7 +42,7 @@ html, body {
 }
 
 
-.li5{
+.vcenterlinewhite{
   background-color: white;
   height: 100%;
   width: 37px;
@@ -51,13 +53,33 @@ html, body {
   /*clear: both;*/
 }
 
-.li2{
+.pcenterline{
+  // background-color: #388E3C;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  // top: 52%;
+  top: 200px;
+  overflow: scroll;
+}
+
+.pcenterlineyamate{
   background-color: #388E3C;
   height: 40px;
   width: 100%;
   position: absolute;
   z-index: 10;
-  top: 52%;
+  // top: 52%;
+}
+.pcenterlinejoban{
+  background-color: blue;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  // top: 52%;
+  top:40px;
 }
 
 /*.li4{
@@ -72,16 +94,26 @@ h10{
   color: white;
   font-size: 22px;
   position: absolute;
-  top: 10%;
-  left: 6px;
+  // top: 4px;
+  left: 14px;
+  padding-top: 5px;
+}
+
+h11{
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  // top: 10%;
+  left: 13px;
   padding-top: 5px;
 }
 
 li {
   margin: 0;
-  padding: 5px;
+  // padding: 5px;
   list-style: none;
   font-size: 19px;
+  line-height:40px;
 }
 
 .right{
@@ -90,4 +122,9 @@ li {
   float: right;
   right: 20px;
   z-index: 20;
+  overflow: scroll;
 }
+// .scroll{
+//   right:30px;
+// }
+
