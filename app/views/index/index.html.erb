@@ -3,14 +3,104 @@
   <head>
     <title>test</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="index.scss">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ <!--    <link rel="stylesheet" type="text/css" href="index.css"> -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
-     <div class="contents">
- <div class="right">
-    <li>
+
+
+
+
+<body>
+
+<SCRIPT language="JavaScript">
+
+ DD = new Date();  //現在時刻の取得
+  // Year = DD.getYear();
+  // Month = DD.getMonth() + 1;
+  // Day = DD.getDate();
+  // Hours = DD.getHours();
+  // Minutes = DD.getMinutes();・
+  // Seconds = DD.getSeconds();
+  // document.write("ページを取得したときの時刻:",Month,"月",Day,"日",Hours,"時",Minutes,"分",Seconds,"秒","<br>",);
+
+window.onload = function () {
+    // setIntervalの基本
+    var timer1 = null;
+    function event() {
+      var tmp = $('h10').offset().top;
+        // xミリ秒ごとにコンソールに表示
+      console.log(tmp);
+      if (tmp < 180){
+      $('.vcenterline').css('background-color', 'blue');
+        $("li").text("Uneno　　　\
+            Nippori\
+            Mikawashima\
+        Minamisennjyu\
+        Kitasenjyu\
+        Matsudo\
+        Kasiwa　　　\
+        Abiko\
+        Tennoudai\
+        Toride")//テキストを強引に変更
+
+      // $(function() {// 自動スクロール
+      //   $("h11").animate({scrollTop:200});
+      // });
+
+      // $(".pcenterlinejoban").animate({
+      //   // scrollTop:$('.pcenterline').offset().top});
+      //   scrollTop:200});
+      }
+      else {
+        $('.vcenterline').css('background-color', 'green');
+        $("li").text("Oosaki　\
+     Gotanda\
+     Meguro　　\
+     Ebisu　　\
+     Shibuya\
+     Harajyuku\
+     Yoyogi\
+     Shinjyuku\
+     Shinookubo\
+     Takadanobaba\
+     Mejiro\
+     Ikebukuro\
+     Ootsuka\
+     Sugamo\
+     Komagome\
+     Tabata\
+     Nishinippori\
+     Nippori\
+     Uguisudani\
+     Ueno\
+     Okachimachi\
+     Akihabara\
+     Kanda　　　\
+     Tokyo\
+     Yuurakucho\
+     Shinbashi\
+     hamamatsucho\
+     Tamachi\
+     Shinagawa")//テキストを強引に変更
+      }
+    }
+    // タイマー開始
+    timer1 = setInterval(event, 100);
+
+
+
+}
+
+</SCRIPT>
+
+
+<div class="contents">
+  <div class="right">
+    <div style="width:150px;height:650px;overflow:auto;">
+    <!-- <li>
      Oosaki
     </li>
     <li>
@@ -96,25 +186,68 @@
     </li>
     <li>
      Shinagawa
+    </li> -->
+    <li>
+     Oosaki
+     Gotanda
+     Meguro
+     Ebisu
+     Shibuya
+     Harajyuku
+     Yoyogi
+     Shinjyuku
+     Shinookubo
+     Takadanobaba
+     Mejiro
+     Ikebukuro
+     Ootsuka
+     Sugamo
+     Komagome
+     Tabata
+     Nishinippori
+     Nippori
+     Uguisudani
+     Ueno
+     Okachimachi
+     Akihabara
+     Kanda
+     Tokyo
+     Yuurakucho
+     Shinbashi
+     hamamatsucho
+     Tamachi
+     Shinagawa
     </li>
     </div>
- <div class="left">
+  </div>
+    <div class="left">
     </div>
- <div class="blue">
+    <div class="blue">
     </div>
- <div class="li1">
+    <div class="vcenterlineblack">
     </div>
- <div class="li2">
-  <h10>
-  Yamanote line
-  </h10>
+
+    <div class="pcenterline">
+      <!-- <div style="width:408px;height:40px;overflow:auto;"> -->
+        <div class = "pcenterlineyamate">
+          <h10>
+          Yamanote line　○
+          </h10>
+        </div>
+        <div class = "pcenterlinejoban">
+          <h11>
+          Joban line　　　○
+          </h11>
+        </div>
+      <!-- </div> -->
     </div>
- <div class="li3">
+
+    <div class="vcenterline">
     </div>
- <div class="li4">
+    <div class="li4">
     </div>
- <div class="li5">
+    <div class="vcenterlinewhite">
     </div>
-</div>
-  </body>
+  </div>
+</body>
 </html>
