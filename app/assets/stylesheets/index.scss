@@ -114,6 +114,7 @@ li {
   list-style: none;
   font-size: 19px;
   line-height:40px;
+  z-index: 2;
 }
 
 .right{
@@ -123,6 +124,23 @@ li {
   right: 20px;
   z-index: 20;
   overflow: scroll;
+}
+
+resultbottom{
+position: absolute;
+left:380px;
+top:185px;
+font-size: 40px;
+z-index: 500;
+}
+
+maru{
+position: absolute;
+left:187px;
+top:202px;
+font-size: 24px;
+z-index: 500;
+color: white;
 }
 // .scroll{
 //   right:30px;

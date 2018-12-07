@@ -11,8 +11,6 @@
   </head>
 
 
-
-
 <body>
 
 <SCRIPT language="JavaScript">
@@ -31,20 +29,39 @@ window.onload = function () {
     var timer1 = null;
     function event() {
       var tmp = $('h10').offset().top;
-        // xミリ秒ごとにコンソールに表示
-      console.log(tmp);
+      // console.log(tmp);
       if (tmp < 180){
+
+      $("#pcenterlinejoban").animate({top: '200' + 'px'});
+
       $('.vcenterline').css('background-color', 'blue');
-        $("li").text("Uneno　　　\
-            Nippori\
-            Mikawashima\
-        Minamisennjyu\
-        Kitasenjyu\
-        Matsudo\
-        Kasiwa　　　\
-        Abiko\
-        Tennoudai\
-        Toride")//テキストを強引に変更
+        $("li").text("\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+        ●　Uneno　　　　　\
+        ●　Nippori　　　　\
+        ●　Mikawashima　\
+        ●　Minamisennjyu　\
+        ●　Kitasenjyu　　\
+        ●　Matsudo　　　　\
+        ●　Kasiwa　　　　\
+        ●　Abiko　　　　　\
+        ●　Tennoudai　　　\
+        ●　Toride　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+        ")//テキストを強引に変更
 
       // $(function() {// 自動スクロール
       //   $("h11").animate({scrollTop:200});
@@ -56,35 +73,205 @@ window.onload = function () {
       }
       else {
         $('.vcenterline').css('background-color', 'green');
-        $("li").text("Oosaki　\
-     Gotanda\
-     Meguro　　\
-     Ebisu　　\
-     Shibuya\
-     Harajyuku\
-     Yoyogi\
-     Shinjyuku\
-     Shinookubo\
-     Takadanobaba\
-     Mejiro\
-     Ikebukuro\
-     Ootsuka\
-     Sugamo\
-     Komagome\
-     Tabata\
-     Nishinippori\
-     Nippori\
-     Uguisudani\
-     Ueno\
-     Okachimachi\
-     Akihabara\
-     Kanda　　　\
-     Tokyo\
-     Yuurakucho\
-     Shinbashi\
-     hamamatsucho\
-     Tamachi\
-     Shinagawa")//テキストを強引に変更
+        $("li").text("\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     ○　Osaki　　　　\
+     ○　Gotanda　　　\
+     ○　Meguro　　　\
+     ○　Ebisu　　　　\
+     ○　Shibuya　　　\
+     ○　Harajyuku　　\
+     ○　Yoyogi　　　\
+     ○　Shinjyuku　　\
+     ○　Shin-Okubo　\
+     ○　Takadanobaba\
+     ○　Mejiro　　　　\
+     ○　Ikebukuro　　\
+     ○　Otsuka　　　　\
+     ○　Sugamo　　　　\
+     ○　Komagome　　\
+     ○　Tabata　　　　\
+     ○　Nishi-Nippori\
+     ○　Nippori　　　\
+     ○　Uguisudani　\
+     ○　Ueno　　　　　\
+     ○　Okachimachi　\
+     ○　Akihabara　　\
+     ○　Kanda　　　　\
+     ○　Tokyo　　　　\
+     ○　Yurakucho　　\
+     ○　Shimbashi　　\
+     ○　Hamamatsucho\
+     ○　Tamachi　　　\
+     ○　Shinagawa　　\
+     ♪　げーとうぇーい\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
+      ")//テキストを強引に変更
+        var tmp2 = $('li').offset().top;// xミリ秒ごとにコンソールに表示
+        // console.log(tmp2);
+        if (tmp2 > -20 ){
+            $('resultbottom').on('click', function() {
+            console.log("Osaki");
+            })
+            // ;console.log("Osaki");
+        }
+        else if(tmp2 < -20 && tmp2 > -60){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Gotanda");
+        }
+        else if(tmp2 < -60 && tmp2 > -100){
+            $('resultbottom').on('click', function() {
+            });console.log("Meguro");
+        }
+        else if(tmp2 < -100 && tmp2 > -140){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Ebisu");
+        }
+        else if(tmp2 < -140 && tmp2 > -180){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Shibuya");
+        }
+        else if(tmp2 < -180 && tmp2 > -220){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Harajuku");
+        }
+        else if(tmp2 < -220 && tmp2 > -260){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Yoyogi");
+        }
+        else if(tmp2 < -260 && tmp2 > -300){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Shinjyuku");
+        }
+        else if(tmp2 < -300 && tmp2 > -340){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Shin-Okubo");
+        }
+        else if(tmp2 < -340 && tmp2 > -380){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Takadanobaba");
+        }
+        else if(tmp2 < -380 && tmp2 > -420){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Mejiro");
+        }
+        else if(tmp2 < -420 && tmp2 > -460){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Ikebukuro");
+        }
+        else if(tmp2 < -460 && tmp2 > -500){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Otsuka");
+        }
+        else if(tmp2 < -500 && tmp2 > -540){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Sugamo");
+        }
+        else if(tmp2 < -540 && tmp2 > -580){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Komagome");
+        }
+        else if(tmp2 < -580 && tmp2 > -620){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Tabata");
+        }
+        else if(tmp2 < -620 && tmp2 > -660){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Nishi-Nippori");
+        }
+        else if(tmp2 < -660 && tmp2 > -700){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Nippori");
+        }
+        else if(tmp2 < -700 && tmp2 > -740){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Uguisudani");
+        }
+        else if(tmp2 < -740 && tmp2 > -780){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Ueno");
+        }
+        else if(tmp2 < -780 && tmp2 > -820){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Okachimati");
+        }
+        else if(tmp2 < -820 && tmp2 > -860){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Akihabara");
+        }
+        else if(tmp2 < -860 && tmp2 > -900){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Kanda");
+        }
+        else if(tmp2 < -900 && tmp2 > -940){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Tokyo");
+        }
+        else if(tmp2 < -940 && tmp2 > -980){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Yurakutyo");
+        }
+        else if(tmp2 < -980 && tmp2 > -1020){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Shimbashi");
+        }
+        else if(tmp2 < -1020 && tmp2 > -1060){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Hamamatsucho");
+        }
+        else if(tmp2 < -1060 && tmp2 > -1100){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Tamachi");
+        }
+        else if(tmp2 < -1100 && tmp2 > -1140){
+            $('resultbottom').on('click', function() {
+
+            });console.log("Shinagawa");
+        }
+        else if(tmp2 < -1140 && tmp2 > -1180){
+            $('resultbottom').on('click', function() {
+
+            });console.log("げーとうぇーい");
+        }
       }
     }
     // タイマー開始
@@ -97,9 +284,11 @@ window.onload = function () {
 </SCRIPT>
 
 
+<resultbottom>></resultbottom>
+<maru>○</maru>
 <div class="contents">
   <div class="right">
-    <div style="width:150px;height:650px;overflow:auto;">
+    <div style="width:199px;height:640px;overflow:auto;">
     <!-- <li>
      Oosaki
     </li>
@@ -188,7 +377,7 @@ window.onload = function () {
      Shinagawa
     </li> -->
     <li>
-     Oosaki
+<!--      Oosaki
      Gotanda
      Meguro
      Ebisu
@@ -216,7 +405,7 @@ window.onload = function () {
      Shinbashi
      hamamatsucho
      Tamachi
-     Shinagawa
+     Shinagawa -->
     </li>
     </div>
   </div>
@@ -228,15 +417,14 @@ window.onload = function () {
     </div>
 
     <div class="pcenterline">
-      <!-- <div style="width:408px;height:40px;overflow:auto;"> -->
         <div class = "pcenterlineyamate">
           <h10>
-          Yamanote line　○
+          Yamanote line
           </h10>
         </div>
         <div class = "pcenterlinejoban">
           <h11>
-          Joban line　　　○
+          Joban line
           </h11>
         </div>
       <!-- </div> -->
