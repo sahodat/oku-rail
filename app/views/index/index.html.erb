@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>test</title>
+    <title>oku-rail_index</title>
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
- <!--    <link rel="stylesheet" type="text/css" href="index.css"> -->
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   </head>
 
 
 <body>
+    <div class="midashi">
+        <aa>Select departing station</aa>
+    </div>
+
 
 <SCRIPT language="JavaScript">
+
 
  DD = new Date();  //現在時刻の取得
   // Year = DD.getYear();
@@ -32,25 +36,28 @@ window.onload = function () {
       // console.log(tmp);
       if (tmp < 180){
 
-      $("#pcenterlinejoban").animate({top: '200' + 'px'});
+        $(function(){
+          $(".pcenterline").scrollTop(40);
+        });
 
-      $('.vcenterline').css('background-color', 'blue');
+
+      $('.vcenterline').css('background-color', '#339999');
         $("li").text("\
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-        ●　Uneno　　　　　\
-        ●　Nippori　　　　\
-        ●　Mikawashima　\
-        ●　Minamisennjyu　\
-        ●　Kitasenjyu　　\
-        ●　Matsudo　　　　\
-        ●　Kasiwa　　　　\
-        ●　Abiko　　　　　\
-        ●　Tennoudai　　　\
-        ●　Toride　　　　\
+        ○　Uneno　　　　　\
+        ○　Nippori　　　　\
+        ○　Mikawashima　\
+        ○　Minamisennjyu　\
+        ○　Kitasenjyu　　\
+        ○　Matsudo　　　　\
+        ○　Kasiwa　　　　\
+        ○　Abiko　　　　　\
+        ○　Tennoudai　　　\
+        ○　Toride　　　　\
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
@@ -62,17 +69,14 @@ window.onload = function () {
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
         ")//テキストを強引に変更
-
-      // $(function() {// 自動スクロール
-      //   $("h11").animate({scrollTop:200});
-      // });
-
-      // $(".pcenterlinejoban").animate({
-      //   // scrollTop:$('.pcenterline').offset().top});
-      //   scrollTop:200});
       }
       else {
-        $('.vcenterline').css('background-color', 'green');
+
+        $(function(){
+          $(".pcenterline").scrollTop(0);
+        });
+
+        $('.vcenterline').css('background-color', '#99cc00');
         $("li").text("\
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
      　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
@@ -123,159 +127,259 @@ window.onload = function () {
         var tmp2 = $('li').offset().top;// xミリ秒ごとにコンソールに表示
         // console.log(tmp2);
         if (tmp2 > -20 ){
-            $('resultbottom').on('click', function() {
-            console.log("Osaki");
-            })
-            // ;console.log("Osaki");
+            $(function(){
+    $(".stationautoscroll").scrollTop(0);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Osaki";
+            });console.log("Osaki");
         }
         else if(tmp2 < -20 && tmp2 > -60){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(40);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Gotanda";
             });console.log("Gotanda");
         }
         else if(tmp2 < -60 && tmp2 > -100){
-            $('resultbottom').on('click', function() {
+            $(function(){
+    $(".stationautoscroll").scrollTop(80);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Meguro";
             });console.log("Meguro");
         }
         else if(tmp2 < -100 && tmp2 > -140){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(120);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Ebisu";
             });console.log("Ebisu");
         }
         else if(tmp2 < -140 && tmp2 > -180){
-            $('resultbottom').on('click', function() {
+            $(function(){
+    $(".stationautoscroll").scrollTop(160);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Shibuya";
 
             });console.log("Shibuya");
         }
         else if(tmp2 < -180 && tmp2 > -220){
-            $('resultbottom').on('click', function() {
+            $(function(){
+    $(".stationautoscroll").scrollTop(200);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Harajyuku";
 
             });console.log("Harajuku");
         }
         else if(tmp2 < -220 && tmp2 > -260){
-            $('resultbottom').on('click', function() {
+            $(function(){
+    $(".stationautoscroll").scrollTop(240);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Yoyogi";
 
             });console.log("Yoyogi");
         }
         else if(tmp2 < -260 && tmp2 > -300){
-            $('resultbottom').on('click', function() {
+            $(function(){
+    $(".stationautoscroll").scrollTop(280);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Shinjyuku";
 
             });console.log("Shinjyuku");
         }
         else if(tmp2 < -300 && tmp2 > -340){
-            $('resultbottom').on('click', function() {
+            $(function(){
+    $(".stationautoscroll").scrollTop(320);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Shin-Okubo";
 
             });console.log("Shin-Okubo");
         }
         else if(tmp2 < -340 && tmp2 > -380){
-            $('resultbottom').on('click', function() {
+            $(function(){
+    $(".stationautoscroll").scrollTop(360);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Takadanobaba";
 
             });console.log("Takadanobaba");
         }
         else if(tmp2 < -380 && tmp2 > -420){
-            $('resultbottom').on('click', function() {
+            $(function(){
+    $(".stationautoscroll").scrollTop(400);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Mejiro";
 
             });console.log("Mejiro");
         }
         else if(tmp2 < -420 && tmp2 > -460){
-            $('resultbottom').on('click', function() {
+            $(function(){
+    $(".stationautoscroll").scrollTop(440);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Ikebukuro";
 
             });console.log("Ikebukuro");
         }
         else if(tmp2 < -460 && tmp2 > -500){
-            $('resultbottom').on('click', function() {
+            $(function(){
+    $(".stationautoscroll").scrollTop(480);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Otsuka";
 
             });console.log("Otsuka");
         }
         else if(tmp2 < -500 && tmp2 > -540){
-            $('resultbottom').on('click', function() {
+            $(function(){
+    $(".stationautoscroll").scrollTop(520);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Sugamo";
 
             });console.log("Sugamo");
         }
         else if(tmp2 < -540 && tmp2 > -580){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(560);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Komagome";
             });console.log("Komagome");
         }
         else if(tmp2 < -580 && tmp2 > -620){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(600);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Tabata";
             });console.log("Tabata");
         }
         else if(tmp2 < -620 && tmp2 > -660){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(640);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Nishi-Nippori";
             });console.log("Nishi-Nippori");
         }
         else if(tmp2 < -660 && tmp2 > -700){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(680);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Nippori";
             });console.log("Nippori");
         }
         else if(tmp2 < -700 && tmp2 > -740){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(720);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Uguisudani";
             });console.log("Uguisudani");
         }
         else if(tmp2 < -740 && tmp2 > -780){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(760);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Ueno";
             });console.log("Ueno");
         }
         else if(tmp2 < -780 && tmp2 > -820){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(800);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Okachimati";
             });console.log("Okachimati");
         }
         else if(tmp2 < -820 && tmp2 > -860){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(840);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Akihabara";
             });console.log("Akihabara");
         }
         else if(tmp2 < -860 && tmp2 > -900){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(880);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Kanda";
             });console.log("Kanda");
         }
         else if(tmp2 < -900 && tmp2 > -940){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(920);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Tokyo";
             });console.log("Tokyo");
         }
         else if(tmp2 < -940 && tmp2 > -980){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(960);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Yurakucho";
             });console.log("Yurakutyo");
         }
         else if(tmp2 < -980 && tmp2 > -1020){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(1000);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Shimbashi";
             });console.log("Shimbashi");
         }
         else if(tmp2 < -1020 && tmp2 > -1060){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(1040);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Hamamatsucho";
             });console.log("Hamamatsucho");
         }
         else if(tmp2 < -1060 && tmp2 > -1100){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(1080);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Tamachi";
             });console.log("Tamachi");
         }
         else if(tmp2 < -1100 && tmp2 > -1140){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(1120);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Shinagawa";
             });console.log("Shinagawa");
         }
         else if(tmp2 < -1140 && tmp2 > -1180){
-            $('resultbottom').on('click', function() {
-
+            $(function(){
+    $(".stationautoscroll").scrollTop(1160);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "うぇーいｗｗｗｗｗ";
             });console.log("げーとうぇーい");
         }
       }
     }
     // タイマー開始
-    timer1 = setInterval(event, 100);
+    timer1 = setInterval(event, 200);
 
 
 
@@ -284,11 +388,11 @@ window.onload = function () {
 </SCRIPT>
 
 
-<resultbottom>></resultbottom>
+<resultbutton>></resultbutton>
 <maru>○</maru>
 <div class="contents">
   <div class="right">
-    <div style="width:199px;height:640px;overflow:auto;">
+    <div class="stationautoscroll"style="width:199px;height:640px;overflow:auto;"id="auto_scroll">
     <!-- <li>
      Oosaki
     </li>
@@ -416,7 +520,7 @@ window.onload = function () {
     <div class="vcenterlineblack">
     </div>
 
-    <div class="pcenterline">
+    <div class="pcenterline"id="auto_scroll2">
         <div class = "pcenterlineyamate">
           <h10>
           Yamanote line
@@ -424,7 +528,7 @@ window.onload = function () {
         </div>
         <div class = "pcenterlinejoban">
           <h11>
-          Joban line
+          　Joban line
           </h11>
         </div>
       <!-- </div> -->
@@ -437,5 +541,9 @@ window.onload = function () {
     <div class="vcenterlinewhite">
     </div>
   </div>
+
+  <div class="endmidashi">
+    <aaa>Oku-rail</aaa>
+    </div>
 </body>
 </html>

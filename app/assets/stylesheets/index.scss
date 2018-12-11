@@ -6,6 +6,39 @@ html, body {
   margin: 0;
   padding: 0;
 }
+.midashi{
+position:absolute;
+top:0;
+height:40px;
+width:100%;
+float: right;
+background-color:#333399;
+z-index: 100;
+text-align:center
+}
+
+aa{
+// font-family:cursive;
+  font-size:28px;
+  color:white;
+}
+
+.endmidashi{
+position:absolute;
+bottom:0;
+height:40px;
+width:100%;
+float: right;
+background-color:#333399;
+text-align:center;
+z-index: 10;
+}
+
+aaa{
+font-family:cursive;
+  font-size:25px;
+  color:white;
+}
 
 .contents{
   height: 100%;
@@ -31,7 +64,8 @@ html, body {
   /*clear: both;*/
 }
 .vcenterline{
-  background-color: #388E3C;
+  // background-color: #388E3C;
+  background-color: #99cc00;
   height: 100%;
   width: 30px;
   float: left;
@@ -65,7 +99,8 @@ html, body {
 }
 
 .pcenterlineyamate{
-  background-color: #388E3C;
+  // background-color: #388E3C;
+  background-color: #99cc00;
   height: 40px;
   width: 100%;
   position: absolute;
@@ -73,7 +108,8 @@ html, body {
   // top: 52%;
 }
 .pcenterlinejoban{
-  background-color: blue;
+  // background-color: blue;
+  background-color: #339999;
   height: 40px;
   width: 100%;
   position: absolute;
@@ -115,6 +151,7 @@ li {
   font-size: 19px;
   line-height:40px;
   z-index: 2;
+
 }
 
 .right{
@@ -126,12 +163,13 @@ li {
   overflow: scroll;
 }
 
-resultbottom{
+resultbutton{
 position: absolute;
 left:380px;
 top:185px;
 font-size: 40px;
 z-index: 500;
+color: white;
 }
 
 maru{
@@ -142,6 +180,8 @@ font-size: 24px;
 z-index: 500;
 color: white;
 }
+
+
 // .scroll{
 //   right:30px;
 // }
