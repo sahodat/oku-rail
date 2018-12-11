@@ -25,7 +25,7 @@
 
 # Learn more: http://github.com/javan/whenever
 
-every 30.minutes do
+every 10.minutes do
   runner 'Scraping_j.get_opdt_joban'
   runner 'Scraping_j2.get_opdt_joban'
   runner 'Scraping_j3.get_opdt_joban'
