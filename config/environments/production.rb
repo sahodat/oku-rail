@@ -25,7 +25,7 @@ Rails.application.configure do
   # config.public_file_server.enabled = ENV['RAILS_SERVE_STATIC_FILES'].present?
 # コンパイルするために応急処置
 
-   config.public_file_server.enabled = true
+  config.public_file_server.enabled = true
 
 
   # Compress JavaScripts and CSS.

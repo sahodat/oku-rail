@@ -6,7 +6,7 @@
 # http://en.wikipedia.org/wiki/Cron
 
 # require File.expand_path(File.dirname(__FILE__) + "/environment"
-# set :environment, :development
+#set :environment, :development
  set :environment, :production
 # set :output, "log/cron_log.log"
 
@@ -18,7 +18,7 @@
 #   runner "MyModel.some_method"
 #   rake "some:great:rake:task"
 # end
-#
+#π
 # every 4.days do
 #   runner "AnotherModel.prune_old_records"
 # end
