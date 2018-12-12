@@ -8,7 +8,7 @@
 # require File.expand_path(File.dirname(__FILE__) + "/environment"
  #set :environment, :development
  set :environment, :production
-# set :output, "log/cron_log.log"
+ set :output, "current/log/cron_log.log"
 
 # Example:
 #
