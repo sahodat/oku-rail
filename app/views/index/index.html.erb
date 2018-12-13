@@ -41,34 +41,166 @@ window.onload = function () {
         });
 
 
-      $('.vcenterline').css('background-color', '#339999');
-        $("li").text("\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-        ○　Uneno　　　　　\
-        ○　Nippori　　　　\
-        ○　Mikawashima　\
-        ○　Minamisennjyu　\
-        ○　Kitasenjyu　　\
-        ○　Matsudo　　　　\
-        ○　Kasiwa　　　　\
-        ○　Abiko　　　　　\
-        ○　Tennoudai　　　\
-        ○　Toride　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-        ")//テキストを強引に変更
+      $('.vcenterline').css('background-color', '#79A1D4');
+        $("li").html(`\r\n
+        ○　Uneno\r\n<br/>
+        ○　Nippori\r\n<br/>
+        ○　Mikawashima\r\n<br/>
+        ○　Minamisenjyu\r\n<br/>
+        ○　Kitasenjyu\r\n<br/>
+        ○　Matsudo\r\n<br/>
+        ○　Kasiwa\r\n<br/>
+        ○　Abiko\r\n<br/>
+        ○　Tennoudai\r\n<br/>
+        ○　Toride\r\n<br/>
+        ○　Fujishiro\r\n<br/>
+        ○　Sanuki\r\n<br/>
+        ○　Ushiku\r\n<br/>
+        ○　Hitachinoushiku\r\n<br/>
+        ○　Arakawaoki\r\n<br/>
+        ○　Tsuchiura\r\n<br/>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        `)//テキストを強引に変更
+ var tmp2 = $('li').offset().top;// xミリ秒ごとにコンソールに表示
+        // console.log(tmp2);
+        if (tmp2 > -20 ){
+            $(function(){
+    $(".stationautoscroll").scrollTop(0);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Ueno";
+            });console.log("Ueno");
+        }
+        else if(tmp2 < -20 && tmp2 > -60){
+            $(function(){
+    $(".stationautoscroll").scrollTop(40);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Nippori";
+            });console.log("Nippori");
+        }
+        else if(tmp2 < -60 && tmp2 > -100){
+            $(function(){
+    $(".stationautoscroll").scrollTop(80);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Mikawashima";
+            });console.log("Mikawashima");
+        }
+        else if(tmp2 < -100 && tmp2 > -140){
+            $(function(){
+    $(".stationautoscroll").scrollTop(120);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Minamisenjyu";
+            });console.log("Minamisenjyu");
+        }
+        else if(tmp2 < -140 && tmp2 > -180){
+            $(function(){
+    $(".stationautoscroll").scrollTop(160);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Kitasenjyu";
+
+            });console.log("Kitasenjyu");
+        }
+        else if(tmp2 < -180 && tmp2 > -220){
+            $(function(){
+    $(".stationautoscroll").scrollTop(200);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Matsudo";
+
+            });console.log("Matsudo");
+        }
+        else if(tmp2 < -220 && tmp2 > -260){
+            $(function(){
+    $(".stationautoscroll").scrollTop(240);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Kashiwa";
+
+            });console.log("Kashiwa");
+        }
+        else if(tmp2 < -260 && tmp2 > -300){
+            $(function(){
+    $(".stationautoscroll").scrollTop(280);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Abiko";
+
+            });console.log("Abiko");
+        }
+        else if(tmp2 < -300 && tmp2 > -340){
+            $(function(){
+    $(".stationautoscroll").scrollTop(320);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Tennoudai";
+
+            });console.log("Tennoudai");
+        }
+        else if(tmp2 < -340 && tmp2 > -380){
+            $(function(){
+    $(".stationautoscroll").scrollTop(360);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Toride";
+
+            });console.log("Toride");
+        }
+        else if(tmp2 < -380 && tmp2 > -420){
+            $(function(){
+    $(".stationautoscroll").scrollTop(400);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Fujishiro";
+
+            });console.log("Fujishiro");
+        }
+        else if(tmp2 < -420 && tmp2 > -460){
+            $(function(){
+    $(".stationautoscroll").scrollTop(440);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Sanuki";
+
+            });console.log("Sanuki");
+        }
+        else if(tmp2 < -460 && tmp2 > -500){
+            $(function(){
+    $(".stationautoscroll").scrollTop(480);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Ushiku";
+
+            });console.log("Ushiku");
+        }
+        else if(tmp2 < -500 && tmp2 > -540){
+            $(function(){
+    $(".stationautoscroll").scrollTop(520);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Hitachinoushiku";
+
+            });console.log("Hitachinoushiku");
+        }
+        else if(tmp2 < -540 && tmp2 > -580){
+            $(function(){
+    $(".stationautoscroll").scrollTop(560);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Arakawaoki";
+            });console.log("Arakawaoki");
+        }
+        else if(tmp2 < -580 && tmp2 > -620){
+            $(function(){
+    $(".stationautoscroll").scrollTop(600);
+});
+            $('resultbutton').on('click', function() {
+                location.href = '/delay?selectstation=' + "Tsuchiura";
+            });console.log("Tsuchiura");
+        }
       }
       else {
 
@@ -76,54 +208,40 @@ window.onload = function () {
           $(".pcenterline").scrollTop(0);
         });
 
-        $('.vcenterline').css('background-color', '#99cc00');
-        $("li").text("\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     ○　Osaki　　　　\
-     ○　Gotanda　　　\
-     ○　Meguro　　　\
-     ○　Ebisu　　　　\
-     ○　Shibuya　　　\
-     ○　Harajyuku　　\
-     ○　Yoyogi　　　\
-     ○　Shinjyuku　　\
-     ○　Shin-Okubo　\
-     ○　Takadanobaba\
-     ○　Mejiro　　　　\
-     ○　Ikebukuro　　\
-     ○　Otsuka　　　　\
-     ○　Sugamo　　　　\
-     ○　Komagome　　\
-     ○　Tabata　　　　\
-     ○　Nishi-Nippori\
-     ○　Nippori　　　\
-     ○　Uguisudani　\
-     ○　Ueno　　　　　\
-     ○　Okachimachi　\
-     ○　Akihabara　　\
-     ○　Kanda　　　　\
-     ○　Tokyo　　　　\
-     ○　Yurakucho　　\
-     ○　Shimbashi　　\
-     ○　Hamamatsucho\
-     ○　Tamachi　　　\
-     ○　Shinagawa　　\
-     ♪　げーとうぇーい\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-     　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\　　　　　　　　　　\
-      ")//テキストを強引に変更
+        $('.vcenterline').css('background-color', '#6AC1B7');
+        $("li").html(`
+         ○　Osaki\r\n<br/>
+         ○　Gotanda\r\n<br/>
+         ○　Meguro\r\n<br/>
+         ○　Ebisu\r\n<br/>
+         ○　Shibuya\r\n<br/>
+         ○　Harajyuku\r\n<br/>
+         ○　Yoyogi\r\n<br/>
+         ○　Shinjyuku\r\n<br/>
+         ○　Shin-Okubo\r\n<br/>
+         ○　Takadanobaba\r\n<br/>
+         ○　Mejiro\r\n<br/>
+         ○　Ikebukuro\r\n<br/>
+         ○　Otsuka\r\n<br/>
+         ○　Sugamo\r\n<br/>
+         ○　Komagome\r\n<br/>
+         ○　Tabata\r\n<br/>
+         ○　Nishi-Nippori\r\n<br/>
+         ○　Nippori\r\n<br/>
+         ○　Uguisudani\r\n<br/>
+         ○　Ueno\r\n<br/>
+         ○　Okachimachi\r\n<br/>
+         ○　Akihabara\r\n<br/>
+         ○　Kanda\r\n<br/>
+         ○　Tokyo\r\n<br/>
+         ○　Yurakucho\r\n<br/>
+         ○　Shimbashi\r\n<br/>
+         ○　Hamamatsucho\r\n<br/>
+         ○　Tamachi\r\n<br/>
+         ○　Shinagawa\r\n<br/>
+         ♪　げーとうぇーい\r\n<br/>
+         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+      `)//テキストを強引に変更
         var tmp2 = $('li').offset().top;// xミリ秒ごとにコンソールに表示
         // console.log(tmp2);
         if (tmp2 > -20 ){
@@ -392,124 +510,8 @@ window.onload = function () {
 <maru>○</maru>
 <div class="contents">
   <div class="right">
-    <div class="stationautoscroll"style="width:199px;height:640px;overflow:auto;"id="auto_scroll">
-    <!-- <li>
-     Oosaki
-    </li>
+    <div class="stationautoscroll" id="auto_scroll">
     <li>
-     Gotanda
-    </li>
-    <li>
-     Meguro
-    </li>
-    <li>
-     Ebisu
-    </li>
-    <li>
-     Shibuya
-    </li>
-    <li>
-     Harajyuku
-    </li>
-    <li>
-     Yoyogi
-    </li>
-    <li>
-     Shinjyuku
-    </li>
-    <li>
-     Shinookubo
-    </li>
-    <li>
-     Takadanobaba
-    </li>
-    <li>
-     Mejiro
-    </li>
-    <li>
-     Ikebukuro
-    </li>
-    <li>
-     Ootsuka
-    </li>
-    <li>
-     Sugamo
-    </li>
-    <li>
-     Komagome
-    </li>
-    <li>
-     Tabata
-    </li>
-    <li>
-     Nishinippori
-    </li>
-    <li>
-     Nippori
-    </li>
-    <li>
-     Uguisudani
-    </li>
-    <li>
-     Ueno
-    </li>
-    <li>
-     Okachimachi
-    </li>
-    <li>
-     Akihabara
-    </li>
-    <li>
-     Kanda
-    </li>
-    <li>
-     Tokyo
-    </li>
-    <li>
-     Yuurakucho
-    </li>
-    <li>
-     Shinbashi
-    </li>
-    <li>
-     hamamatsucho
-    </li>
-    <li>
-     Tamachi
-    </li>
-    <li>
-     Shinagawa
-    </li> -->
-    <li>
-<!--      Oosaki
-     Gotanda
-     Meguro
-     Ebisu
-     Shibuya
-     Harajyuku
-     Yoyogi
-     Shinjyuku
-     Shinookubo
-     Takadanobaba
-     Mejiro
-     Ikebukuro
-     Ootsuka
-     Sugamo
-     Komagome
-     Tabata
-     Nishinippori
-     Nippori
-     Uguisudani
-     Ueno
-     Okachimachi
-     Akihabara
-     Kanda
-     Tokyo
-     Yuurakucho
-     Shinbashi
-     hamamatsucho
-     Tamachi
-     Shinagawa -->
     </li>
     </div>
   </div>

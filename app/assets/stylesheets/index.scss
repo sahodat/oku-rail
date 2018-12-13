@@ -12,7 +12,7 @@ top:0;
 height:40px;
 width:100%;
 float: right;
-background-color:#333399;
+background-color:#517D99;
 z-index: 100;
 text-align:center
 }
@@ -20,7 +20,7 @@ text-align:center
 aa{
 // font-family:cursive;
   font-size:28px;
-  color:white;
+  color: white;
 }
 
 .endmidashi{
@@ -29,15 +29,15 @@ bottom:0;
 height:40px;
 width:100%;
 float: right;
-background-color:#333399;
+background-color:#517D99;
 text-align:center;
 z-index: 10;
 }
 
 aaa{
-font-family:cursive;
+  font-family:cursive;
   font-size:25px;
-  color:white;
+  color: #DFEFED;
 }
 
 .contents{
@@ -65,7 +65,7 @@ font-family:cursive;
 }
 .vcenterline{
   // background-color: #388E3C;
-  background-color: #99cc00;
+  background-color: #6AC1B7;
   height: 100%;
   width: 30px;
   float: left;
@@ -100,7 +100,7 @@ font-family:cursive;
 
 .pcenterlineyamate{
   // background-color: #388E3C;
-  background-color: #99cc00;
+  background-color: #6AC1B7;
   height: 40px;
   width: 100%;
   position: absolute;
@@ -109,7 +109,7 @@ font-family:cursive;
 }
 .pcenterlinejoban{
   // background-color: blue;
-  background-color: #339999;
+  background-color: #79A1D4;
   height: 40px;
   width: 100%;
   position: absolute;
@@ -127,7 +127,7 @@ font-family:cursive;
 }*/
 
 h10{
-  color: white;
+  color:white;
   font-size: 22px;
   position: absolute;
   // top: 4px;
@@ -146,30 +146,32 @@ h11{
 
 li {
   margin: 0;
-  // padding: 5px;
+
+  padding-top: 200px;
   list-style: none;
   font-size: 19px;
   line-height:40px;
   z-index: 2;
-
+  color: #454545;
 }
 
 .right{
-  clear: both;
-  position: absolute;
-  float: right;
-  right: 20px;
-  z-index: 20;
+  // clear: both;
+  // position: absolute;
+  // float: right;
+  right: -34px;
+  width: 219px;
+//   z-index: 20;
   overflow: scroll;
-}
+ }
 
 resultbutton{
 position: absolute;
-left:380px;
+right: 0px;
 top:185px;
 font-size: 40px;
 z-index: 500;
-color: white;
+color: #DFEFED;
 }
 
 maru{
@@ -178,9 +180,13 @@ left:187px;
 top:202px;
 font-size: 24px;
 z-index: 500;
-color: white;
+color: #DFEFED;
 }
 
+.stationautoscroll{
+  height: 168vw;
+  overflow: scroll;
+}
 
 // .scroll{
 //   right:30px;
