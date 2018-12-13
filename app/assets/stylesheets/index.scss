@@ -35,7 +35,7 @@ z-index: 10;
 }
 
 aaa{
-font-family:cursive;
+  font-family:cursive;
   font-size:25px;
   color: #DFEFED;
 }
@@ -147,7 +147,7 @@ h11{
 li {
   margin: 0;
 
-  // padding: 5px;
+  padding-top: 200px;
   list-style: none;
   font-size: 19px;
   line-height:40px;
@@ -159,15 +159,15 @@ li {
   // clear: both;
   // position: absolute;
   // float: right;
-  // right: 20px;
-  width: 199px;
+  right: -34px;
+  width: 219px;
 //   z-index: 20;
-//   overflow: scroll;
+  overflow: scroll;
  }
 
 resultbutton{
 position: absolute;
-left:380px;
+right: 0px;
 top:185px;
 font-size: 40px;
 z-index: 500;
@@ -183,6 +183,10 @@ z-index: 500;
 color: #DFEFED;
 }
 
+.stationautoscroll{
+  height: 168vw;
+  overflow: scroll;
+}
 
 // .scroll{
 //   right:30px;
