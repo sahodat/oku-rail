@@ -6,8 +6,8 @@
 # http://en.wikipedia.org/wiki/Cron
 
 # require File.expand_path(File.dirname(__FILE__) + "/environment"
- #set :environment, :development
- set :environment, :production
+ set :environment, :development
+ #set :environment, :production
  set :output, "current/log/cron_log.log"
 
 # Example:
