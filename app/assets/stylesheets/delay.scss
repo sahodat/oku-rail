@@ -14,31 +14,34 @@ html, body {
 }
 
 h1{
+  position:absolute;
+  top:5vh;
+  left:15vw;
   text-align: center;
 }
 h2{
-font-size: 15px;
+font-size: 20px;
 position: absolute;
-top: 150px;
-left:100px;
+top: 21vh;
+left:20vw;
 }
 h3{
-font-size: 15px;
+font-size: 20px;
 position: absolute;
-top: 150px;
-right: 100px;
+top: 34vw;
+right: 20vw;
 }
 h4{
 font-size: 30px;
 position: absolute;
-top: 75px;
-left: 100px;
+top: 11.5vh;
+left: 20vw;
 }
 h5{
 font-size: 30px;
 position: absolute;
-top: 65px;
-right: 110px;
+top: 10vh;
+right: 15vh;
 }
 /*駅名*/
 
@@ -59,7 +62,7 @@ liosaki {
   font-size: 19px;
   transform:rotate(-34deg);
   position: absolute;
-  top:285px;
+  top:255px;
   left: 20px;
 }
 li1 {
@@ -69,7 +72,7 @@ li1 {
   font-size: 19px;
   transform:rotate(-34deg);
   position: absolute;
-  top:305px;
+  top:265px;
   left: 95px;
 }
 li2 {
@@ -79,8 +82,8 @@ li2 {
   font-size: 19px;
   transform:rotate(-34deg);
   position: absolute;
-  top:335px;
-  left: 160px;
+  top:300px;
+  left: 155px;
 }
 li3 {
   margin: 0;
@@ -89,8 +92,8 @@ li3 {
   font-size: 19px;
   transform:rotate(-34deg);
   position: absolute;
-  top:383px;
-  left: 225px;
+  top:345px;
+  left: 230px;
 }
 li4 {
   margin: 0;
@@ -99,8 +102,8 @@ li4 {
   font-size: 19px;
   transform:rotate(-34deg);
   position: absolute;
-  top:438px;
-  left: 263px;
+  top:400px;
+  left: 260px;
 }
 li5 {
   margin: 0;
@@ -109,30 +112,10 @@ li5 {
   font-size: 19px;
   transform:rotate(-34deg);
   position: absolute;
-  top:500px;
+  top:465px;
   left: 290px;
 }
 li6 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 19px;
-  transform:rotate(-34deg);
-  position: absolute;
-  top:585px;
-  left: 310px;
-}
-li7 {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 19px;
-  transform:rotate(-34deg);
-  position: absolute;
-  top:545px;
-  left: 310px;
-}
-li8 {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -148,21 +131,17 @@ li8 {
   float: right;
   right: 20px;
   z-index: 20;
-  height: 100%;
-  width: 190px;
 }
 
 /*扇*/
 
 p.fan {
   position: absolute;
-  bottom: -65px;
-  margin-bottom: -8px;
+  bottom: -16px;
   width:280px; height:280px; background-color:white;
   border:solid 10px #A5D6A7;
   border-radius: 0% 100% 0% 0%;
 }
-
 
 
 .backbutton {
@@ -180,3 +159,6 @@ p.fan {
     background: #67c5ff;
     color: white;
 }
+
+
+

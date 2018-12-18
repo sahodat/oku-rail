@@ -2,21 +2,183 @@
 <html>
   <head>
     <title>oku-rail_delay</title>
+
     <meta charset="UTF-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <%= Gon::Base.render_data %>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <!-- 前のページで選択した駅受け取り -->
     <SCRIPT language="JavaScript">
+
             var query = location.search;
             var tmp = query.split('=');
             var showselectstation = tmp[1]
-            console.log(showselectstation);
+            // console.log(showselectstation);
+            // console.log(gon.job);
+            var jj_delaycount = gon.job;//tmp1
+            var jj_count = gon.job2;//tmp2
+            var jj_hugedelay_count = gon.job3;//tmp3
+
+            var i = 0;
+            var j = 0;
+            var j_delaycount = 0.0;
+            var j_count = 0.0;
+            var j_hugedelay_delaycount = 0.0;
+
+//判定部分作成
+            DD = new Date();  //現在時刻の取得
+         // Year = DD.getYear();
+         // Month = DD.getMonth() + 1;
+         // Day = DD.getDate();
+            Hours = DD.getHours();
+            // Minutes = DD.getMinutes();
+            // Seconds = DD.getSeconds();
+            var hour = Number(Hours) ;
+            var classifier = hour + ', "' + showselectstation;//showselectstationにしたい
+            reg1 = new RegExp(classifier);
+            //分子の取得
+
+            for(key in jj_delaycount){
+                i = i + 1;
+                var tmpi = key;
+                if (tmpi.match(reg1)){    //時間と駅名
+                     // console.log(tmp1[key]);
+                     j_delaycount = jj_delaycount[key];
+                     //分母の取得
+                     for (key in jj_count){
+                        j = j + 1;
+                        tmpj = key;
+                        if (tmpj.match(reg1)){    //時間と駅名
+                      // console.log(tmp2[key]);
+                        j_count = jj_count[key];
+                        }
+                     }
+                }
+            }
+            //確率の計算計算
+            parseFloat(j_delaycount);
+            parseFloat(j_count);
+            var jresult = (j_delaycount / j_count)*100;
+            if (j_count == 0){
+                console.log("選んだ駅は常磐線ではないため表示できません")
+            }
+            else{
+                console.log(hour,"時の",showselectstation,"の小規模遅延の可能性は",jresult,"%");
+            }
+
+            for(key in jj_hugedelay_count){
+                i = i + 1;
+                tmpi = key;
+                if (tmpi.match(reg1)){    //時間と駅名
+                     // console.log(tmp1[key]);
+                     j_hugedelay_delaycount = jj_hugedelay_count[key];
+                }
+            }
+            //確率の計算計算
+            parseFloat(j_hugedelay_delaycount);
+            parseFloat(j_count);
+            // console.log(j_count);
+            var jresulth = (j_hugedelay_delaycount / j_count)*100;
+            if (j_count == 0){
+                console.log("選んだ駅は常磐線ではないため表示できません")
+            }
+            else{
+            console.log(hour,"時の",showselectstation,"の大規模遅延の可能性は",jresulth,"%");
+            }
+
+
+
+
+//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線
+
+            var yy_delaycount = gon.yam;//tmp1
+            var yy_count = gon.yam2;//tmp2
+            var yy_hugedelay_count = gon.yam3;//tmp3
+
+            var i = 0;
+            var j = 0;
+            var y_delaycount = 0.0;
+            var y_count = 0.0;
+            var y_huge_delaycount = 0.0;
+
+            var hour = Number(Hours) ;
+            var abc = hour + ', "' + showselectstation;
+            reg1 = new RegExp(abc);//判定部分
+            //分子の取得
+            for(key in yy_delaycount){
+                i = i + 1;
+                tmpi = key;
+                if (tmpi.match(reg1)){    //時間と駅名
+                     // console.log(tmp1[key]);
+                     j_delaycount = yy_delaycount[key];
+                     //分母の取得
+                     for (key in yy_count){
+                        j = j + 1;
+                        tmpj = key;
+                        if (tmpj.match(reg1)){    //時間と駅名
+                        // console.log(tmp2[key]);
+                        y_count = yy_count[key];
+                        }
+                     }
+                }
+            }
+            //確率の計算計算
+            parseFloat(y_delaycount);
+            parseFloat(y_count);
+            var yresult = (y_delaycount / y_count)*100;
+            if (y_count == 0){
+                console.log("エラー：選んだ駅は山手線ではないため表示できません")
+            }
+            else{
+            console.log(hour,"時の",showselectstation,"の小規模遅延の可能性は",yresult,"%");
+            }
+
+            var y_delaycount = 0.0;
+            var y_huge_delaycount = 0.0;
+
+
+            for(key in yy_hugedelay_count){
+                i = i + 1;
+                tmpi = key;
+                if (tmpi.match(reg1)){    //時間と駅名
+                     // console.log(tmp1[key]);
+                     y_huge_delaycount = yy_hugedelay_count[key];
+                     //分母の取得
+                     // for (key in tmp3){
+                     //    j = j + 1;
+                     //    tmpj = key;
+                     //    if (tmpj.match(reg1)){    //時間と駅名
+                     // // console.log(tmp2[key]);
+                     // y_count = tmp3[key];
+                     //    }
+                     // }
+                }
+            }
+            //確率の計算計算
+            parseFloat(y_huge_delaycount);
+            parseFloat(y_count);
+            var yresulth = (y_huge_delaycount / y_count)*100;
+            if (y_count == 0){
+                console.log("エラー：選んだ駅は山手線ではないため表示できません")
+            }
+            else{
+            console.log(hour,"時の",showselectstation,"の大規模遅延の可能性は",yresulth,"%");
+            }
+
+
+
+
     </SCRIPT>
 
+<<<<<<< HEAD
     <a href="#" class="backbutton">＜<!--  戻るボタン -->
+=======
+
+    <a href="#" class="backbutton">🚃 <!--  戻るボタン -->
+>>>>>>> master
       <SCRIPT language="JavaScript">
         $('.backbutton').on('click', function() {
                 location.href = '/';
@@ -24,210 +186,47 @@
       </SCRIPT>
     </a>
 
-    <SCRIPT language="JavaScript">
-  DD = new Date();  //現在時刻の取得
-  // Year = DD.getYear();
-  Month = DD.getMonth() + 1;
-  Day = DD.getDate();
-  Hours = DD.getHours();
-  Minutes = DD.getMinutes();
-  Seconds = DD.getSeconds();
-  console.log("現在時刻",Month,"月",Day,"日",Hours,"時",Minutes,"分",Seconds,"秒","<br>");
-
-  Hours = 23;//とりあえず２３時
-  // 時間判定部分
-  // if (Hours == 0){
-  //   var tmp1 = <%= @jobancount[0] %>;
-  //   if
-  //   var tmp2 = <%= @smalldelay[0] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("0時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 1){
-  //   var tmp1 = <%= @jobancount[1] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[1] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("1時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 2){
-  //   var tmp1 = <%= @jobancount[2] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[2] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("2時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 3){
-  //   var tmp1 = <%= @jobancount[3] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[3] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("3時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 4){
-  //   var tmp1 = <%= @jobancount[4] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[4] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("4時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 5){
-  //   var tmp1 = <%= @jobancount[5] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[5] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("5時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 6){
-  //   var tmp1 = <%= @jobancount[6] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[6] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("6時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 7){
-  //   var tmp1 = <%= @jobancount[7] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[7] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("7時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 8){
-  //   var tmp1 = <%= @jobancount[8] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[8] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("8時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 9){
-  //   var tmp1 = <%= @jobancount[9] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[9] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("9時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 10){
-  //   var tmp1 = <%= @jobancount[10] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[10] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("10時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 11){
-  //   var tmp1 = <%= @jobancount[11] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[11] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("11時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 12){
-  //   var tmp1 = <%= @jobancount[12] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[12] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("12時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 13){
-  //   var tmp1 = <%= @jobancount[13] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[13] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("13時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 14){
-  //   var tmp1 = <%= @jobancount[14] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[14] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("14時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 15){
-  //   var tmp1 = <%= @jobancount[15] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[15] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("15時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 16){
-  //   var tmp1 = <%= @jobancount[16] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[16] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("16時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 17){
-  //   var tmp1 = <%= @jobancount[17] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[17] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("17時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 18){
-  //   var tmp1 = <%= @jobancount[18] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[18] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("18時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 19){
-  //   var tmp1 = <%= @jobancount[19] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[19] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("19時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 20){
-  //   var tmp1 = <%= @jobancount[20] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[20] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("20時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else if (Hours == 21){
-  //   var tmp1 = <%= @jobancount[21] %>;//ある時の小規模遅れの確率の計算
-  //   var tmp2 = <%= @smalldelay[21] %>;
-  //   var tmp = (tmp2/tmp1)*100
-  //   document.write("21時の小規模遅延の可能性は",tmp,"%","<br>")
-  // }
-  // else
-    if (Hours == 22){
-    var tmp1 = <%= @jobancount[22] %>;//ある時の小規模遅れの確率の計算
-    var tmp2 = <%= @smalldelay[22] %>;
-    var tmp = (tmp2/tmp1)*100
-    document.write("22時の小規模遅延の可能性は",tmp,"%","<br>")
-  }
-  else if (Hours == 23){
-    var tmp1 = <%= @jobancount[23] %>;//ある時の小規模遅れの確率の計算
-    var tmp2 = <%= @smalldelay[23] %>;
-    var tmp = (tmp2/tmp1)*100
-    console.log("23時の小規模遅延の可能性は",tmp,"%","<br>")
-  }
-  else{
-    document.write("時間判定部分エラー")
-  }
-</SCRIPT>
-<!-- <p>カウント<%=  @jobancount %></p>
-<p>遅れなし<%=  @jobandelay0 %></p>
-<p>小規模遅延件数<%=  @smalldelay %></p>
-<p>大規模遅延件数<%=  @hugedelay %></p> -->
-
     <div class="contents">
     <h1>Delay Prediction</h1>
     <h2>long time</h2>
-    <h4>0.2%</h4>
+    <h4>
+        <SCRIPT language="JavaScript">
+            tmpresult = yresulth.toFixed(1);
+            document.write(tmpresult,"%");
+        </SCRIPT>
+    </h4>
+
     <h3>Short time</h3>
-    <h5>1%</h5>
+    <h5>
+        <SCRIPT language="JavaScript">
+            tmpresult = yresult.toFixed(1);
+            document.write(tmpresult,"%");
+        </SCRIPT>
+    </h5>
     <p class="fan"></p>
 
      <div class="station">
     <liosaki>
-     Ikebykuro
+     Oosaki
     </liosaki>
     <li1>
-     Otsuka
+     Gotanda
     </li1>
     <li2>
-     Sugamo
+     Meguro
     </li2>
     <li3>
-     Komagome
+     Ebisu
     </li3>
     <li4>
-    Tabata
+     Shibuya
     </li4>
     <li5>
-     Nishi-Nippori
+     Harajyuku
     </li5>
     <li6>
-     Nippori
+     Yoyogi
     </li6>
-    <li7>
-     Uguisudani
-    </li7>
-        <li8>
-     Ueno
-    </li8>
-
         </div>
     </div>
 
