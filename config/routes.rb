@@ -3,5 +3,5 @@ Rails.application.routes.draw do
    root "index#index"
 
    get   'delay'      =>  'delay2#delay2'
-
+   get   'delay2'    =>  'delay#delay'
 end
