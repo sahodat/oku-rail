@@ -4,7 +4,20 @@
     <![endif]-->
     <div class="wrap">
       <h1>Delay Prediction</h1>
+      <h4>
+        <SCRIPT language="JavaScript">
+            tmpresult = yresulth.toFixed(1);
+            document.write(tmpresult,"%");
+        </SCRIPT>
+    </h4>
 
+    <h3>Short time</h3>
+    <h5>
+        <SCRIPT language="JavaScript">
+            tmpresult = yresult.toFixed(1);
+            document.write(tmpresult,"%");
+        </SCRIPT>
+    </h5>
       <div id="my-circle-menu" class="cm-container">
         <ul class="cm-items">
         </ul>
@@ -324,4 +337,164 @@
         });
       </SCRIPT>
     </a>
+ <SCRIPT language="JavaScript">
 
+            var query = location.search;
+            var tmp = query.split('=');
+            var showselectstation = tmp[1]
+            // console.log(showselectstation);
+            // console.log(gon.job);
+            var jj_delaycount = gon.job;//tmp1
+            var jj_count = gon.job2;//tmp2
+            var jj_hugedelay_count = gon.job3;//tmp3
+
+            var i = 0;
+            var j = 0;
+            var j_delaycount = 0.0;
+            var j_count = 0.0;
+            var j_hugedelay_delaycount = 0.0;
+
+//判定部分作成
+            DD = new Date();  //現在時刻の取得
+         // Year = DD.getYear();
+         // Month = DD.getMonth() + 1;
+         // Day = DD.getDate();
+            Hours = DD.getHours();
+            // Minutes = DD.getMinutes();
+            // Seconds = DD.getSeconds();
+            var hour = Number(Hours) ;
+            var classifier = hour + ', "' + showselectstation;//showselectstationにしたい
+            reg1 = new RegExp(classifier);
+            //分子の取得
+
+            for(key in jj_delaycount){
+                i = i + 1;
+                var tmpi = key;
+                if (tmpi.match(reg1)){    //時間と駅名
+                     // console.log(tmp1[key]);
+                     j_delaycount = jj_delaycount[key];
+                     //分母の取得
+                     for (key in jj_count){
+                        j = j + 1;
+                        tmpj = key;
+                        if (tmpj.match(reg1)){    //時間と駅名
+                      // console.log(tmp2[key]);
+                        j_count = jj_count[key];
+                        }
+                     }
+                }
+            }
+            //確率の計算計算
+            parseFloat(j_delaycount);
+            parseFloat(j_count);
+            var jresult = (j_delaycount / j_count)*100;
+            if (j_count == 0){
+                console.log("選んだ駅は常磐線ではないため表示できません")
+            }
+            else{
+                console.log(hour,"時の",showselectstation,"の小規模遅延の可能性は",jresult,"%");
+            }
+
+            for(key in jj_hugedelay_count){
+                i = i + 1;
+                tmpi = key;
+                if (tmpi.match(reg1)){    //時間と駅名
+                     // console.log(tmp1[key]);
+                     j_hugedelay_delaycount = jj_hugedelay_count[key];
+                }
+            }
+            //確率の計算計算
+            parseFloat(j_hugedelay_delaycount);
+            parseFloat(j_count);
+            // console.log(j_count);
+            var jresulth = (j_hugedelay_delaycount / j_count)*100;
+            if (j_count == 0){
+                console.log("選んだ駅は常磐線ではないため表示できません")
+            }
+            else{
+            console.log(hour,"時の",showselectstation,"の大規模遅延の可能性は",jresulth,"%");
+            }
+
+
+
+
+//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線
+
+            var yy_delaycount = gon.yam;//tmp1
+            var yy_count = gon.yam2;//tmp2
+            var yy_hugedelay_count = gon.yam3;//tmp3
+
+            var i = 0;
+            var j = 0;
+            var y_delaycount = 0.0;
+            var y_count = 0.0;
+            var y_huge_delaycount = 0.0;
+
+            var hour = Number(Hours) ;
+            var abc = hour + ', "' + showselectstation;
+            reg1 = new RegExp(abc);//判定部分
+            //分子の取得
+            for(key in yy_delaycount){
+                i = i + 1;
+                tmpi = key;
+                if (tmpi.match(reg1)){    //時間と駅名
+                     // console.log(tmp1[key]);
+                     j_delaycount = yy_delaycount[key];
+                     //分母の取得
+                     for (key in yy_count){
+                        j = j + 1;
+                        tmpj = key;
+                        if (tmpj.match(reg1)){    //時間と駅名
+                        // console.log(tmp2[key]);
+                        y_count = yy_count[key];
+                        }
+                     }
+                }
+            }
+            //確率の計算計算
+            parseFloat(y_delaycount);
+            parseFloat(y_count);
+            var yresult = (y_delaycount / y_count)*100;
+            if (y_count == 0){
+                console.log("エラー：選んだ駅は山手線ではないため表示できません")
+            }
+            else{
+            console.log(hour,"時の",showselectstation,"の小規模遅延の可能性は",yresult,"%");
+            }
+
+            var y_delaycount = 0.0;
+            var y_huge_delaycount = 0.0;
+
+
+            for(key in yy_hugedelay_count){
+                i = i + 1;
+                tmpi = key;
+                if (tmpi.match(reg1)){    //時間と駅名
+                     // console.log(tmp1[key]);
+                     y_huge_delaycount = yy_hugedelay_count[key];
+                     //分母の取得
+                     // for (key in tmp3){
+                     //    j = j + 1;
+                     //    tmpj = key;
+                     //    if (tmpj.match(reg1)){    //時間と駅名
+                     // // console.log(tmp2[key]);
+                     // y_count = tmp3[key];
+                     //    }
+                     // }
+                }
+            }
+            //確率の計算計算
+            parseFloat(y_huge_delaycount);
+            parseFloat(y_count);
+            var yresulth = (y_huge_delaycount / y_count)*100;
+            if (y_count == 0){
+                console.log("エラー：選んだ駅は山手線ではないため表示できません")
+            }
+            else{
+            console.log(hour,"時の",showselectstation,"の大規模遅延の可能性は",yresulth,"%");
+            }
+
+
+
+
+    </SCRIPT>
