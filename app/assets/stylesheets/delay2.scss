@@ -1,10 +1,10 @@
 .cm-container {
   position: relative;
-  width: 550px;
-  height: 550px;
+  width: 82.5vh;
+  height: 82.5vh;
   border: solid 3px #6AC1B7;
-  left: -335px;
-  top: 342px;
+  left: -50vh;
+  top: 53vh;
   transform:rotate(-30deg);
   -khtml-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -18,15 +18,15 @@
   position: absolute;
   width: 100%;
   height: auto;
-  left: 264px;
-  top: 67px;
+  left: 39.5vh;
+  top: 10vh;
   box-sizing: border-box;
 }
 .cm-container .cm-items .cm-item {
   position: absolute;
   list-style: none;
-  width: 155px;
-  line-height: 20px;
+  width: 28vh;
+  line-height: 3vh;
   box-sizing: border-box;
 }
 .cm-container .cm-items .cm-item.selected {
@@ -35,7 +35,7 @@
 .cm-container .cm-items .cm-item a {
   position: relative;
   color: #6AC1B7;
-  padding-left: 30px;
+  padding-left: 4vh;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -45,12 +45,12 @@
 }
 .cm-container .cm-items .cm-item a:hover {
   color: #74dba2;
-  padding-left: 32px;
+  padding-left: 4vh;
 }
 .cm-container .cm-items .cm-item a:before {
   content: '';
-  width: 15px;
-  height: 15px;
+  width: 2vh;
+  height: 2vh;
   position: absolute;
   top: 0;
   left: 0;
@@ -62,24 +62,24 @@
 }
 .cm-container .cm-selected-container {
   position: absolute;
-  width: 100px;
-  height: 100px;
-  border: solid 4px #6AC1B7;
+  width: 15vh;
+  height: 15vh;
+  border: solid 0.6vh #6AC1B7;
   -khtml-border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
   border-radius: 100%;
   background-color: #fff;
-  right: -50px;
-  top: 225px;
+  right: -13vw;
+  top: 33.5vh;
   text-align: center;
-  padding: 10px;
+  padding: 1.5vh;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
 }
 .cm-container .cm-selected-container .cm-selected-label {
-  height: 74px;
-  width: 74px;
+  height: 11vh;
+  width: 11vh;
   overflow: hidden;
   font-weight: 700;
   color: #6AC1B7;
@@ -94,11 +94,11 @@
 }
 .cm-container .cm-selected-container .cm-button {
   position: absolute;
-  width: 28px;
-  height: 28px;
-  font-size: 20px;
+  width: 2vh;
+  height: 2vh;
+  font-size: 3vh;
   cursor: pointer;
-  top: 36px;
+  top: 5vh;
   color: #6AC1B7;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
@@ -109,22 +109,27 @@
   color: #74dba2;
 }
 .cm-container .cm-selected-container .cm-button.cm-button-prev {
-  left: -32px;
+  left: -5vh;
 }
 .cm-container .cm-selected-container .cm-button.cm-button-prev:hover {
-  left: -34px;
+  left: -5vh;
 }
 .cm-container .cm-selected-container .cm-button.cm-button-next {
-  right: -32px;
+  right: -5vh;
   z-index: 10;
 }
 .cm-container .cm-selected-container .cm-button.cm-button-next:hover {
-  right: -34px;
+  right: -5vh;
 }
 
 li2{
   font-size: 15px;
 }
-html,body{
-  position: fixed;
+// html,body{
+//   position: fixed;
+// }
+.backbutton{
+  margin-top: 90vh;
+  margin-left:-180px;
+  border: solid 0px;
 }

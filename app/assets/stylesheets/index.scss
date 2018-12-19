@@ -26,7 +26,7 @@ aa{
 .endmidashi{
 position:absolute;
 bottom:0;
-height:40px;
+height:6vh;
 width:100%;
 float: right;
 background-color:#517D99;
@@ -57,10 +57,10 @@ aaa{
   position: fixed;
   background-color: black;
   height: 100%;
-  width: 45px;
+  width: 12vw;
   float: left;
   // left: 43%;
-  left: 161px;
+  left: 24.1vh;
   z-index: 3;
   /*clear: both;*/
 }
@@ -68,7 +68,7 @@ aaa{
   // background-color: #388E3C;
   background-color: #6AC1B7;
   height: 100%;
-  width: 30px;
+  width: 8vw;
   float: left;
   position: fixed;
   left: 45%;
@@ -80,7 +80,7 @@ aaa{
 .vcenterlinewhite{
   background-color: white;
   height: 100%;
-  width: 37px;
+  width: 5.6vh;
   float: left;
   position: fixed;
   left: 44%;
@@ -90,12 +90,12 @@ aaa{
 
 .pcenterline{
   // background-color: #388E3C;
-  height: 40px;
+  height: 6vh;
   width: 100%;
   position: absolute;
   z-index: 10;
   // top: 52%;
-  top: 200px;
+  top: 30vh;
   overflow: scroll;
 }
 
@@ -160,16 +160,16 @@ li {
   // clear: both;
   // position: absolute;
   // float: right;
-  right: -20px;
-  width: 219px;
+  right: -5vw;
+  width: 58.5vw;
 //   z-index: 20;
   overflow: scroll;
  }
 
 resultbutton{
 position: absolute;
-right: 0px;
-top:185px;
+right: 0vw;
+top: 29vh;
 font-size: 40px;
 z-index: 500;
 color: #DFEFED;
@@ -177,16 +177,17 @@ color: #DFEFED;
 
 maru{
 position: absolute;
-left:174px;
-top:202px;
+left:45.8vw;
+top:30.3vh;
 font-size: 24px;
 z-index: 500;
 color: #DFEFED;
 }
 
 .stationautoscroll{
-  height: 168vw;
+  height: 167vw;
   overflow: scroll;
+  position: fixed;
 }
 
 // .scroll{
