@@ -1,0 +1,172 @@
+// // Place all the styles related to the delay_joban controller here.
+// // They will automatically be included in application.css.
+// // You can use Sass (SCSS) here: http://sass-lang.com/
+// .cm-container {
+//   position: relative;
+//   width: 82.5vh;
+//   height: 82.5vh;
+//   // border: solid 3px #79A1D4;
+//   left: -65vh;
+//   top: 32vh;
+//   // transform:rotate(-30deg);
+//   -khtml-border-radius: 100%;
+//   -webkit-border-radius: 100%;
+//   -moz-border-radius: 100%;
+//   border-radius: 100%;
+//   box-sizing: border-box;
+// }
+// .cm-container .cm-items {
+//   padding: 0;
+//   margin: 0;
+//   position: absolute;
+//   width: 100%;
+//   height: auto;
+//   left: 39.5vh;
+//   top: 10vh;
+//   box-sizing: border-box;
+// }
+// .cm-container .cm-items .cm-item {
+//   position: absolute;
+//   list-style: none;
+//   width: 28vh;
+//   line-height: 3vh;
+//   box-sizing: border-box;
+// }
+// .cm-container .cm-items .cm-item.selected {
+//   display: none;
+// }
+// .cm-container .cm-items .cm-item a {
+//   position: relative;
+//   // color: #79A1D4;
+//   padding-left: 4vh;
+//   text-decoration: none;
+//   -webkit-transition: all 0.2s ease-out;
+//   -moz-transition: all 0.2s ease-out;
+//   -o-transition: all 0.2s ease-out;
+//   transition: all 0.2s ease-out;
+//   box-sizing: border-box;
+// }
+// .cm-container .cm-items .cm-item a:hover {
+//   // color: #74dba2;
+//   padding-left: 4vh;
+// }
+// .cm-container .cm-items .cm-item a:before {
+//   content: '';
+//   width: 2vh;
+//   height: 2vh;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   // background-color: #79A1D4;
+//   -khtml-border-radius: 100%;
+//   -webkit-border-radius: 100%;
+//   -moz-border-radius: 100%;
+//   border-radius: 100%;
+// }
+// .cm-container .cm-selected-container {
+//   position: absolute;
+//   width: 15vh;
+//   height: 15vh;
+//   // border: solid 0.6vh #79A1D4;
+//   -khtml-border-radius: 100%;
+//   -webkit-border-radius: 100%;
+//   -moz-border-radius: 100%;
+//   border-radius: 100%;
+//   background-color: #fff;
+//   right: -13vw;
+//   top: 33.5vh;
+//   text-align: center;
+//   padding: 1.5vh;
+//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+//   box-sizing: border-box;
+// }
+// .cm-container .cm-selected-container .cm-selected-label {
+//   height: 11vh;
+//   width: 11vh;
+//   overflow: hidden;
+//   font-weight: 700;
+//   // color: #79A1D4;
+//   font-size: 95%;
+//   box-sizing: border-box;
+// }
+// .cm-container .cm-selected-container .cm-selected-label span {
+//   display: table-cell;
+//   vertical-align: middle;
+//   height: inherit;
+//   width: inherit;
+// }
+// .cm-container .cm-selected-container .cm-button {
+//   position: absolute;
+//   width: 2vh;
+//   height: 2vh;
+//   font-size: 3vh;
+//   cursor: pointer;
+//   top: 5vh;
+//   // color: #79A1D4;
+//   -webkit-transition: all 0.2s ease-out;
+//   -moz-transition: all 0.2s ease-out;
+//   -o-transition: all 0.2s ease-out;
+//   transition: all 0.2s ease-out;
+// }
+// .cm-container .cm-selected-container .cm-button:hover {
+//   // color: #517d99;
+// }
+// .cm-container .cm-selected-container .cm-button.cm-button-prev {
+//   left: -5vh;
+// }
+// .cm-container .cm-selected-container .cm-button.cm-button-prev:hover {
+//   left: -5vh;
+// }
+// .cm-container .cm-selected-container .cm-button.cm-button-next {
+//   right: -5vh;
+//   z-index: 10;
+// }
+// .cm-container .cm-selected-container .cm-button.cm-button-next:hover {
+//   right: -5vh;
+// }
+
+// li2{
+//   font-size: 15px;
+// }
+// // html,body{
+// //   position: fixed;
+// // }
+// .backbutton{
+//   margin-top: 10px;
+//   margin-left:-180px;
+//   border: solid 0px;
+//   color: #517d99;
+// }
+
+// h1{
+//   top: 8vh;
+// }
+
+// h2{
+// color: #454545;
+// font-size: 20px;
+// position: absolute;
+// top: 30vh;
+// left:20vw;
+// }
+// h3{
+// color: #454545;
+// font-size: 20px;
+// position: absolute;
+// top: 30vh;
+// right: 20vw;
+// }
+// h4{
+// color: #454545;
+// font-size: 30px;
+// position: absolute;
+// top: 19vh;
+// left: 7vw;
+// }
+// h5{
+// color: #454545;
+// font-size: 30px;
+// position: absolute;
+// top: 17vh;
+// right: 7vw;
+// }

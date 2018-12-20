@@ -1,4 +1,4 @@
-   <!--remove if this supports IE7 and below-->
+  <!--remove if this supports IE7 and below-->
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -6,8 +6,8 @@
     <SCRIPT language="JavaScript">
     window.onload = function () {
 
-    function CircleMenu(target, data, selectedByKey, opt, func) {
-      this.data = null;
+    function CircleMenu(target, jdata, selectedByKey, opt, func) {
+      this.jdata = null;
       this.items = [];
       this.steps = null;
       this.lastPos = [];
@@ -25,7 +25,7 @@
       this.init = function() {
         var that = this;
 
-        if(data && data.length > 0) {
+        if(jdata && jdata.length > 0) {
           that.createSteps();
           that.createItems();
 
@@ -48,7 +48,7 @@
             that.next();
           });
         }else {
-          console.log('%c CircleMenu ', 'background: #4bd187; color: #333', 'No data');
+          console.log('%c CircleMenu ', 'background: #4bd187; color: #333', 'No jdata');
           target.hide();
         }
       }
@@ -56,9 +56,9 @@
       this.createItems = function() {
         var that = this;
         var cm_items = target.find('.cm-items');
-        var offset = _.findIndex(data, [opt.key, selectedByKey]);
+        var offset = _.findIndex(jdata, [opt.key, selectedByKey]);
 
-        _.forEach(data, function(d, i){
+        _.forEach(jdata, function(d, i){
           cm_items.append('<li2 id="item-'+i+'" class="cm-item"><a href="'+d.url+'" title="'+d.label+'">'+d.label+'</a></li2>');
           that.items.push($('#item-'+i));
         });
@@ -71,9 +71,9 @@
         var theta = [], steps = [], positiveSteps = [];
         var widePerItem = 30;
 
-        var max_dat = data.length;
+        var max_dat = jdata.length;
 
-        _.forEach(data, function(d, i){
+        _.forEach(jdata, function(d, i){
           var posX = 0, posY = 0;
 
           if(i <= Math.round((max_dat - 1) / 2)) {
@@ -99,7 +99,7 @@
 
       this.next = function() {
         var that = this, offset = that.currentSelected;
-        var min_offset = 0, max_offset = data.length - 1;
+        var min_offset = 0, max_offset = jdata.length - 1;
 
         offset = offset < max_offset ? offset + 1 : min_offset;
 
@@ -108,7 +108,7 @@
 
       this.prev = function() {
         var that = this, offset = that.currentSelected;
-        var min_offset = 0, max_offset = data.length - 1;
+        var min_offset = 0, max_offset = jdata.length - 1;
 
         offset = offset > min_offset ? offset - 1 : max_offset;
 
@@ -117,13 +117,13 @@
 
       this.goto = function(targetSelected) {
         var that = this;
-        var offset = _.findIndex(data, [opt.key, targetSelected]);
+        var offset = _.findIndex(jdata, [opt.key, targetSelected]);
 
         that.select(offset, {goto: true});
       }
 
       this.select = function(offset, selectOpt) {
-        var that = this, max_dat = data.length;
+        var that = this, max_dat = jdata.length;
         var cm_label = $('.cm-selected-label');
 
         if(offset >= 0) {
@@ -136,7 +136,7 @@
             that.onChangeBegin ? that.onChangeBegin() : null;
 
             var completeAnimation = function(i) {
-              cm_label.find('span').text(data[offset].label);
+              cm_label.find('span').text(jdata[offset].label);
               cm_label.find('span').fadeIn(300);
 
               that.lastPos[i] = {
@@ -145,7 +145,7 @@
               }
 
               if(i == offset) {
-                that.onChangeComplete ? that.onChangeComplete(data[i]) : null;
+                that.onChangeComplete ? that.onChangeComplete(jdata[i]) : null;
               }
 
               that.animate = false;
@@ -252,11 +252,11 @@
         window.onload = function () {
         $(function(){
       var DATA = []
-      var data = ["Ueno-Tokyo", "Tokyo-Shinagwa", "Shinagwa-Shibuya","Shibuya-Shinjyuku","Shinjyuku-Ikebukuro","Ikebukuro-Ueno"];
+      var jdata = ["Ueno-Nippori", "Nippori-Kitasenjyu", "Kitasenjyu-Kashiwa","Kashiwa-Toride","Toride-Ushiku","Ushiku-Tsuchiura"];
     for(var i=0;i<=5;i++) {
         DATA.push({
-          label: data[i],
-          url: 'menu-'+i
+          label: jdata[i],
+          url: 'jmenu-'+i
         });
       }
 
@@ -486,15 +486,15 @@
             document.write(yresult,"%");
         </SCRIPT>
     </h5>
-      <div id="my-circle-menu" class="cm-container"style ='position: fixed; color:#6AC1B7;'>
-        <ul class="cm-items" style="color:#6AC1B7;">
+      <div id="my-circle-menu" class="cm-container"style ='position: fixed; color:#79A1D4;'>
+        <ul class="cm-items">
         </ul>
-        <div class="cm-selected-container" style='color:#6AC1B7;'>
-          <div class="cm-selected-label" style='color:#6AC1B7;'>
+        <div class="cm-selected-container">
+          <div class="cm-selected-label">
             <span><!-- Menu Pertama --></span>
           </div>
-          <a class="cm-button cm-button-prev" type="button" title="Previous"><i class="fa fa-chevron-left"></i></a>
-          <a class="cm-button cm-button-next" type="button" title="Next"><i class="fa fa-chevron-right"></i></a>
+          <a class="cm-button cm-button-prev" type="button" title="Previous"><i class="fa fa-chevron-left"style='color:#517d99;'></i></a>
+          <a class="cm-button cm-button-next" type="button" title="Next" style='color:#517d99;'><i class="fa fa-chevron-right"></i></a>
         </div>
       </div>
     </div>

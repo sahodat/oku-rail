@@ -2,7 +2,7 @@
   position: relative;
   width: 82.5vh;
   height: 82.5vh;
-  border: solid 3px #6AC1B7;
+  border: solid 3px;
   left: -65vh;
   top: 32vh;
   // transform:rotate(-30deg);
@@ -34,7 +34,7 @@
 }
 .cm-container .cm-items .cm-item a {
   position: relative;
-  color: #6AC1B7;
+   color: #4545;
   padding-left: 4vh;
   text-decoration: none;
   -webkit-transition: all 0.2s ease-out;
@@ -43,6 +43,7 @@
   transition: all 0.2s ease-out;
   box-sizing: border-box;
 }
+
 .cm-container .cm-items .cm-item a:hover {
   color: #74dba2;
   padding-left: 4vh;
@@ -54,7 +55,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #6AC1B7;
+  // background-color: #6AC1B7;
   -khtml-border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -64,7 +65,7 @@
   position: absolute;
   width: 15vh;
   height: 15vh;
-  border: solid 0.6vh #6AC1B7;
+  border: solid 0.6vh;
   -khtml-border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -82,7 +83,7 @@
   width: 11vh;
   overflow: hidden;
   font-weight: 700;
-  color: #6AC1B7;
+  // color: #6AC1B7;
   font-size: 95%;
   box-sizing: border-box;
 }
@@ -99,7 +100,7 @@
   font-size: 3vh;
   cursor: pointer;
   top: 5vh;
-  color: #6AC1B7;
+  // color: #6AC1B7;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
   -o-transition: all 0.2s ease-out;
