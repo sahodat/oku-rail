@@ -3,9 +3,9 @@
   width: 82.5vh;
   height: 82.5vh;
   border: solid 3px #6AC1B7;
-  left: -50vh;
-  top: 53vh;
-  transform:rotate(-30deg);
+  left: -65vh;
+  top: 32vh;
+  // transform:rotate(-30deg);
   -khtml-border-radius: 100%;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
@@ -129,7 +129,41 @@ li2{
 //   position: fixed;
 // }
 .backbutton{
-  margin-top: 90vh;
+  margin-top: 10px;
   margin-left:-180px;
   border: solid 0px;
+  color: #517d99;
+}
+
+h1{
+  top: 8vh;
+}
+
+h2{
+color: #454545;
+font-size: 20px;
+position: absolute;
+top: 30vh;
+left:20vw;
+}
+h3{
+color: #454545;
+font-size: 20px;
+position: absolute;
+top: 30vh;
+right: 20vw;
+}
+h4{
+color: #454545;
+font-size: 30px;
+position: absolute;
+top: 19vh;
+left: 7vw;
+}
+h5{
+color: #454545;
+font-size: 30px;
+position: absolute;
+top: 17vh;
+right: 7vw;
 }

@@ -2,34 +2,6 @@
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-    <div class="wrap">
-      <h1>Delay Prediction</h1>
-      <h4>
-        <SCRIPT language="JavaScript">
-            tmpresult = yresulth.toFixed(1);
-            document.write(tmpresult,"%");
-        </SCRIPT>
-    </h4>
-
-    <h3>Short time</h3>
-    <h5>
-        <SCRIPT language="JavaScript">
-            tmpresult = yresult.toFixed(1);
-            document.write(tmpresult,"%");
-        </SCRIPT>
-    </h5>
-      <div id="my-circle-menu" class="cm-container"style ='position: fixed;'>
-        <ul class="cm-items">
-        </ul>
-        <div class="cm-selected-container">
-          <div class="cm-selected-label">
-            <span><!-- Menu Pertama --></span>
-          </div>
-          <a class="cm-button cm-button-prev" type="button" title="Previous"><i class="fa fa-chevron-left"></i></a>
-          <a class="cm-button cm-button-next" type="button" title="Next"><i class="fa fa-chevron-right"></i></a>
-        </div>
-      </div>
-    </div>
 
     <SCRIPT language="JavaScript">
     window.onload = function () {
@@ -288,7 +260,7 @@
         });
       }
 
-      var SELECTED = 'menu-0';
+      var SELECTED = tmp[1];
 
       var OPTIONS = {
         key: 'url',
@@ -315,18 +287,18 @@
     });
     }
     </SCRIPT>
-        <script type="text/javascript">
+  <script type="text/javascript">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
+ // var _gaq = _gaq || [];
+ // _gaq.push(['_setAccount', 'UA-36251023-1']);
+ // _gaq.push(['_setDomainName', 'jqueryscript.net']);
+ // _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+ // (function() {
+ //   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ //   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ //   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ // })();
 
 </script>
 
@@ -337,7 +309,6 @@
         });
       </SCRIPT>
     </a>
-
  <SCRIPT language="JavaScript">
 
             var query = location.search;
@@ -354,6 +325,7 @@
             var j_delaycount = 0.0;
             var j_count = 0.0;
             var j_hugedelay_delaycount = 0.0;
+
 
 //判定部分作成
             DD = new Date();  //現在時刻の取得
@@ -494,8 +466,36 @@
             else{
             console.log(hour,"時の",showselectstation,"の大規模遅延の可能性は",yresulth,"%");
             }
-
-
-
-
     </SCRIPT>
+
+
+
+
+
+    <div class="wrap">
+      <h1>Delay Prediction</h1>
+      <h2>long time</h2>
+      <h3>Short time</h3>
+      <h4>
+        <SCRIPT language="JavaScript">
+            document.write(yresult,"%");
+        </SCRIPT>
+    </h4>
+    <h5>
+        <SCRIPT language="JavaScript">
+            document.write(yresult,"%");
+        </SCRIPT>
+    </h5>
+      <div id="my-circle-menu" class="cm-container"style ='position: fixed;'>
+        <ul class="cm-items">
+        </ul>
+        <div class="cm-selected-container">
+          <div class="cm-selected-label">
+            <span><!-- Menu Pertama --></span>
+          </div>
+          <a class="cm-button cm-button-prev" type="button" title="Previous"><i class="fa fa-chevron-left"></i></a>
+          <a class="cm-button cm-button-next" type="button" title="Next"><i class="fa fa-chevron-right"></i></a>
+        </div>
+      </div>
+    </div>
+
