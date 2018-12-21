@@ -18,6 +18,18 @@ def delay2
     gon.yam3 = @yshugedelay
 
 
+  # 天気の表示をさせたかった
+   # API_KEY = "d8e73de4d8f45d9629f522dbc8159fd0"
+   #     BASE_URL = "http://api.openweathermap.org/data/2.5/forecast"
+
+   # require "json"
+   # require "open-uri"
+
+   #  response = open(BASE_URL + "?q=Tokyo,jp&APPID=#{API_KEY}")
+
+   #  @wether = JSON.pretty_generate(JSON.parse(response.read))
+   #  gon.wether = @wether
+
 end
 
 end
