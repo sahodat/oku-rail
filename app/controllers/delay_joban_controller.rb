@@ -11,14 +11,5 @@ class DelayJobanController < ApplicationController
     gon.jobtesthugedelay =@jobtesthugedelay
 
 
-@yamtest = OpdtYamanote.group("HOUR(date)").group(:from_station).group(:direction).count
-@yamtestdelay = OpdtYamanote.group("HOUR(date)").group(:from_station).group(:direction).where("delay > 59 and delay < 301").count
-@yamtesthugedelay = OpdtYamanote.group("HOUR(date)").group(:from_station).group(:direction).where("delay > 901").count
-
-    gon.yamtest = @yamtest
-    gon.yamtestdelay = @yamtestdelay
-    gon.yamatesthugedelay = @yamtesthugedelay
-
-
 end
 end
