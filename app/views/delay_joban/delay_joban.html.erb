@@ -55,6 +55,7 @@
 
           $('.cm-button-prev').on('click', function(){
             that.prev();
+
           });
           $('.cm-button-next').on('click', function(){
             that.next();
@@ -325,7 +326,7 @@
 
 var query = location.search;
 var tmp = query.split('=');
-var selectstation = tmp[1]
+var selectstation = tmp[1];
 
 var jobtest = gon.jobtest;
 var jobtestdelay = gon.jobtestdelay;
@@ -474,7 +475,8 @@ function initialize(){
             <span><!-- Menu Pertama --></span>
           </div>
           <a class="cm-button cm-button-prev" type="button" title="Previous"><i class="fa fa-chevron-left"style='color:#517d99;'></i></a>
-          <a class="cm-button cm-button-next" type="button" title="Next" style='color:#517d99;'><i class="fa fa-chevron-right"></i></a>
+          <a class="cm-button cm-button-next" type="button" title="Next" style='color:#517d99;'><i class="fa fa-chevron-right">
+          </i></a>
         </div>
       </div>
     </div>
