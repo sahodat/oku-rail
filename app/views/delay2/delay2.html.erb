@@ -309,164 +309,146 @@
         });
       </SCRIPT>
     </a>
- <SCRIPT language="JavaScript">
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>oku-rail_delay</title>
 
-            var query = location.search;
-            var tmp = query.split('=');
-            var showselectstation = tmp[1]
-            // console.log(showselectstation);
-            // console.log(gon.job);
-            var jj_delaycount = gon.job;//tmp1
-            var jj_count = gon.job2;//tmp2
-            var jj_hugedelay_count = gon.job3;//tmp3
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <%= Gon::Base.render_data %>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
 
-            var i = 0;
-            var j = 0;
-            var j_delaycount = 0.0;
-            var j_count = 0.0;
-            var j_hugedelay_delaycount = 0.0;
+<SCRIPT language="JavaScript">
 
+var query = location.search;
+var tmp = query.split('=');
+var selectstation = tmp[1]
 
-//判定部分作成
+var jobtest = gon.jobtest;
+var jobtestdelay = gon.jobtestdelay;
+var jobtesthugedelay = gon.jobtesthugedelay;
+
+testcount = 0.0;
+testdelaycount = 0.0;
+testhugedelaycount = 0.0;
+var sum = 0.0;
+var sums = 0.0;
+var sumh = 0.0;
+
+//menu-0
+if (selectstation == "jmenu-0"){
+showselectstation = "Ueno"; get_value();
+initialize();
+}
+
+// menu-1
+if (selectstation == "jmenu-1"){
+showselectstation = "Nippori"; get_value();
+showselectstation = "Mikawashima"; get_value();
+showselectstation = "Minamisenju"; get_value();
+initialize();
+}
+
+//menu-2
+if (selectstation == "jmenu-2"){
+showselectstation = "Kitasenju"; get_value();
+showselectstation = "Matsudo"; get_value();
+initialize();
+}
+
+//menue-3
+if (selectstation == "jmenu-3"){
+showselectstation = "Kasiwa"; get_value();
+showselectstation = "Abiko"; get_value();
+showselectstation = "Tennoudai"; get_value();//?
+initialize();
+}
+
+//menue-4
+if (selectstation == "jmenu-4"){
+showselectstation = "Toride"; get_value();
+showselectstation = "Fujishiro"; get_value();
+showselectstation = "Sanuki"; get_value();
+initialize();
+}
+
+//menue-5
+if (selectstation == "jmenu-5"){
+showselectstation = "Ushiku"; get_value();
+showselectstation = "HitachinoUshiku"; get_value();
+showselectstation = "Tsuchiura"; get_value();
+initialize();
+}
+
+function get_value(){
+testcount = 0.0;
+testdelaycount = 0.0;
+testhugedelaycount = 0.0;
+    //判定部分作成
             DD = new Date();  //現在時刻の取得
-         // Year = DD.getYear();
-         // Month = DD.getMonth() + 1;
-         // Day = DD.getDate();
             Hours = DD.getHours();
-            // Minutes = DD.getMinutes();
-            // Seconds = DD.getSeconds();
             var hour = Number(Hours) ;
-            var classifier = hour + ', "' + showselectstation;//showselectstationにしたい
-            reg1 = new RegExp(classifier);
-            //分子の取得
+            // hour = 1;//テスト用
+            //方向部分は作り直し
+            var direction = "Outbound";
+            var direction2 = "Inbound";
+            var classifier = hour + ', "' + showselectstation +'", "' + direction + '"' ;  //
 
-            for(key in jj_delaycount){
-                i = i + 1;
-                var tmpi = key;
-                if (tmpi.match(reg1)){    //時間と駅名
-                     // console.log(tmp1[key]);
-                     j_delaycount = jj_delaycount[key];
-                     //分母の取得
-                     for (key in jj_count){
-                        j = j + 1;
+            for(key in jobtestdelay){
+                tmpi = key;
+                tmpi = tmpi.replace("[","");
+                tmpi = tmpi.replace("]","");
+                if(tmpi == classifier){
+                     testdelaycount = jobtestdelay[key];
+                     for (key in jobtest){
                         tmpj = key;
-                        if (tmpj.match(reg1)){    //時間と駅名
-                      // console.log(tmp2[key]);
-                        j_count = jj_count[key];
+                        tmpj = tmpj.replace("[","");
+                        tmpj = tmpj.replace("]","");
+                        if (tmpj == classifier){
+                        testcount = jobtest[key];
                         }
                      }
                 }
             }
-            //確率の計算計算
-            parseFloat(j_delaycount);
-            parseFloat(j_count);
-            var jresult = (j_delaycount / j_count)*100;
-            if (j_count == 0){
-                console.log("選んだ駅は常磐線ではないため表示できません")
-            }
-            else{
-                console.log(hour,"時の",showselectstation,"の小規模遅延の可能性は",jresult,"%");
-            }
 
-            for(key in jj_hugedelay_count){
-                i = i + 1;
+            for(key in jobtesthugedelay){
                 tmpi = key;
-                if (tmpi.match(reg1)){    //時間と駅名
-                     // console.log(tmp1[key]);
-                     j_hugedelay_delaycount = jj_hugedelay_count[key];
+                tmpi = tmpi.replace("[","");
+                if (tmpi.match(classifier)){
+                     testhugedelaycount = jobtesthugedelay[key];
                 }
             }
-            //確率の計算計算
-            parseFloat(j_hugedelay_delaycount);
-            parseFloat(j_count);
-            // console.log(j_count);
-            var jresulth = (j_hugedelay_delaycount / j_count)*100;
-            if (j_count == 0){
-                console.log("選んだ駅は常磐線ではないため表示できません")
-            }
-            else{
-            console.log(hour,"時の",showselectstation,"の大規模遅延の可能性は",jresulth,"%");
-            }
 
+            sum = sum + testcount
+            sums = sums + testdelaycount
+            sumh = sumh + testhugedelaycount
 
+            testresult = (sums / sum)*100;
+            testresulth = (sumh / sum)*100;
+            console.log("今の（小）件数",testdelaycount);
+            console.log("今の確率（小）",testresult);
+            console.log("今の（大）件数",testhugedelaycount);
+            console.log("今の確率（大）",testresulth);
+            console.log("合計件数",sum);
+            console.log("合計小規模",sums);
+            console.log("合計大規模",sumh);
+            console.log("-----------------------------------")
+};
 
+function initialize(){
+ testcount = 0.0;
+ testdelaycount = 0.0;
+ testhugedelaycount = 0.0;
+ sum = 0.0;
+ sums = 0.0;
+ sumh = 0.0;
+}
 
-//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線//ここから山手線
-
-            var yy_delaycount = gon.yam;//tmp1
-            var yy_count = gon.yam2;//tmp2
-            var yy_hugedelay_count = gon.yam3;//tmp3
-
-            var i = 0;
-            var j = 0;
-            var y_delaycount = 0.0;
-            var y_count = 0.0;
-            var y_huge_delaycount = 0.0;
-
-            var hour = Number(Hours) ;
-            var abc = hour + ', "' + showselectstation;
-            reg1 = new RegExp(abc);//判定部分
-            //分子の取得
-            for(key in yy_delaycount){
-                i = i + 1;
-                tmpi = key;
-                if (tmpi.match(reg1)){    //時間と駅名
-                     // console.log(tmp1[key]);
-                     j_delaycount = yy_delaycount[key];
-                     //分母の取得
-                     for (key in yy_count){
-                        j = j + 1;
-                        tmpj = key;
-                        if (tmpj.match(reg1)){    //時間と駅名
-                        // console.log(tmp2[key]);
-                        y_count = yy_count[key];
-                        }
-                     }
-                }
-            }
-            //確率の計算計算
-            parseFloat(y_delaycount);
-            parseFloat(y_count);
-            var yresult = (y_delaycount / y_count)*100;
-            if (y_count == 0){
-                console.log("エラー：選んだ駅は山手線ではないため表示できません")
-            }
-            else{
-            console.log(hour,"時の",showselectstation,"の小規模遅延の可能性は",yresult,"%");
-            }
-
-            var y_delaycount = 0.0;
-            var y_huge_delaycount = 0.0;
-
-
-            for(key in yy_hugedelay_count){
-                i = i + 1;
-                tmpi = key;
-                if (tmpi.match(reg1)){    //時間と駅名
-                     // console.log(tmp1[key]);
-                     y_huge_delaycount = yy_hugedelay_count[key];
-                     //分母の取得
-                     // for (key in tmp3){
-                     //    j = j + 1;
-                     //    tmpj = key;
-                     //    if (tmpj.match(reg1)){    //時間と駅名
-                     // // console.log(tmp2[key]);
-                     // y_count = tmp3[key];
-                     //    }
-                     // }
-                }
-            }
-            //確率の計算計算
-            parseFloat(y_huge_delaycount);
-            parseFloat(y_count);
-            var yresulth = (y_huge_delaycount / y_count)*100;
-            if (y_count == 0){
-                console.log("エラー：選んだ駅は山手線ではないため表示できません")
-            }
-            else{
-            console.log(hour,"時の",showselectstation,"の大規模遅延の可能性は",yresulth,"%");
-            }
-    </SCRIPT>
+</SCRIPT>
 
 
 
@@ -478,12 +460,14 @@
       <h3>Short time</h3>
       <h4>
         <SCRIPT language="JavaScript">
-            document.write(yresult,"%");
+            tmpresult = testresulth.toFixed(1);
+            document.write(tmpresult,"%");
         </SCRIPT>
     </h4>
     <h5>
         <SCRIPT language="JavaScript">
-            document.write(yresult,"%");
+            tmpresult = testresult.toFixed(1);
+            document.write(tmpresult,"%");
         </SCRIPT>
     </h5>
       <div id="my-circle-menu" class="cm-container"style ='position: fixed; color:#6AC1B7;'>
@@ -498,4 +482,5 @@
         </div>
       </div>
     </div>
-
+  </body>
+</html>
