@@ -26,7 +26,7 @@ aa{
 .endmidashi{
 position:absolute;
 bottom:0;
-height:6vh;
+height:40px;
 width:100%;
 float: right;
 background-color:#517D99;
@@ -57,10 +57,10 @@ aaa{
   position: fixed;
   background-color: black;
   height: 100%;
-  width: 12vw;
+  width: 45px;
   float: left;
   // left: 43%;
-  left: 24.1vh;
+  left: 161px;
   z-index: 3;
   /*clear: both;*/
 }
@@ -68,7 +68,7 @@ aaa{
   // background-color: #388E3C;
   background-color: #6AC1B7;
   height: 100%;
-  width: 8vw;
+  width: 30px;
   float: left;
   position: fixed;
   left: 45%;
@@ -90,12 +90,12 @@ aaa{
 
 .pcenterline{
   // background-color: #388E3C;
-  height: 6vh;
+  height: 40px;
   width: 100%;
   position: absolute;
   z-index: 10;
   // top: 52%;
-  top: 30vh;
+  top: 200px;
   overflow: scroll;
 }
 
@@ -160,16 +160,16 @@ li {
   // clear: both;
   // position: absolute;
   // float: right;
-  right: -5vw;
-  width: 58.5vw;
+  right: -20px;
+  width: 219px;
 //   z-index: 20;
   overflow: scroll;
  }
 
 resultbutton{
 position: absolute;
-right: 0vw;
-top: 29vh;
+right: 0px;
+top: 194px;
 font-size: 40px;
 z-index: 500;
 color: #DFEFED;
@@ -177,8 +177,8 @@ color: #DFEFED;
 
 maru{
 position: absolute;
-left:45.8vw;
-top:30.3vh;
+left:174px;
+top:202px;
 font-size: 24px;
 z-index: 500;
 color: #DFEFED;
