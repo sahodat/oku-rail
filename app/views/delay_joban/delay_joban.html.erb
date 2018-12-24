@@ -459,15 +459,19 @@ function initialize(){
       <h4>
         <SCRIPT language="JavaScript">
           tmpresult = testresulth.toFixed(1);
-          tmpresult = tmpresult * gon.mag;//天気で倍率
-            document.write(tmpresult,"%");
+          tmpresult1 = tmpresult * gon.mag;//天気で倍率
+          tmpresult = tmpresult.toFixed(1);
+
+          document.write(tmpresult1,"%");
         </SCRIPT>
     </h4>
     <h5 class="odometer" style ="margin-left: 60px;" >
         <SCRIPT language="JavaScript">
-            tmpresult = testresult.toFixed(1);
-            tmpresult = tmpresult * gon.mag;//天気で倍率
-            document.write(tmpresult,"%");
+          tmpresult = testresult.toFixed(1);
+          tmpresult = tmpresult * gon.mag;//天気で倍率
+          tmpresult = tmpresult.toFixed(1);
+
+          document.write(tmpresult,"%");
         </SCRIPT>
     </h5>
       <div id="my-circle-menu" class="cm-container"style ='position: fixed; color:#79A1D4;'>
