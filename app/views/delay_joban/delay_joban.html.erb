@@ -2,18 +2,10 @@
     <!--[if lt IE 7]>
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>oku-rail_delay</title>
 
-    <meta charset="UTF-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <%= Gon::Base.render_data %>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
+
 
     <SCRIPT language="JavaScript">
     window.onload = function () {
@@ -322,15 +314,19 @@
         });
       </SCRIPT>
     </a>
+
+
 <SCRIPT language="JavaScript">
 
 var query = location.search;
 var tmp = query.split('=');
 var selectstation = tmp[1];
 
-var jobtest = gon.jobtest;
-var jobtestdelay = gon.jobtestdelay;
-var jobtesthugedelay = gon.jobtesthugedelay;
+var job = gon.job;
+var jobdelay = gon.jobdelay;
+var jobhugedelay = gon.jobhugedelay;
+console.log(job);
+console.log(jobhugedelay);
 
 testcount = 0.0;
 testdelaycount = 0.0;
@@ -393,34 +389,40 @@ testhugedelaycount = 0.0;
             DD = new Date();  //現在時刻の取得
             Hours = DD.getHours();
             var hour = Number(Hours) ;
-            // hour = 1;//テスト用
+            hour = 17;//テスト用
             //方向部分は作り直し
             var direction = "Outbound";
             var direction2 = "Inbound";
             var classifier = hour + ', "' + showselectstation +'", "' + direction + '"' ;  //
 
-            for(key in jobtestdelay){
+            for(key in jobdelay){
                 tmpi = key;
                 tmpi = tmpi.replace("[","");
                 tmpi = tmpi.replace("]","");
                 if(tmpi == classifier){
-                     testdelaycount = jobtestdelay[key];
-                     for (key in jobtest){
+                     testdelaycount = jobdelay[key];
+                     console.log("keyは",tmpi);
+                         console.log("識別器は",classifier);
+                     console.log(jobdelay[key]);
+                     for (key in job){
                         tmpj = key;
                         tmpj = tmpj.replace("[","");
                         tmpj = tmpj.replace("]","");
                         if (tmpj == classifier){
-                        testcount = jobtest[key];
+                        testcount = job[key];
+                        console.log("keyは",tmpj);
+                         console.log("識別器は",classifier);
+                         console.log(jobhugedelay[key]);
                         }
                      }
                 }
             }
 
-            for(key in jobtesthugedelay){
+            for(key in jobhugedelay){
                 tmpi = key;
                 tmpi = tmpi.replace("[","");
                 if (tmpi.match(classifier)){
-                     testhugedelaycount = jobtesthugedelay[key];
+                     testhugedelaycount = jobhugedelay[key];
                 }
             }
 
@@ -479,6 +481,3 @@ function initialize(){
         </div>
       </div>
     </div>
-
-  </body>
-</html>

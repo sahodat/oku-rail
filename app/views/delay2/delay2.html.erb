@@ -327,11 +327,15 @@
 
 var query = location.search;
 var tmp = query.split('=');
-var selectstation = tmp[1]
+var selectstation = tmp[1];
+console.log(selectstation);
 
-var jobtest = gon.jobtest;
-var jobtestdelay = gon.jobtestdelay;
-var jobtesthugedelay = gon.jobtesthugedelay;
+var yam = gon.yam;
+var yamdelay = gon.yamdelay;
+var yamhugedelay = gon.yamhugedelay;
+console.log(yam);
+console.log(yamdelay);
+console.log(yamhugedelay);
 
 testcount = 0.0;
 testdelaycount = 0.0;
@@ -341,47 +345,61 @@ var sums = 0.0;
 var sumh = 0.0;
 
 //menu-0
-if (selectstation == "jmenu-0"){
+if (selectstation == "menu-0"){
 showselectstation = "Ueno"; get_value();
+showselectstation = "Okachimachi"; get_value();
+showselectstation = "Akihabara"; get_value();
+showselectstation = "Kanda"; get_value();
 initialize();
 }
 
 // menu-1
-if (selectstation == "jmenu-1"){
-showselectstation = "Nippori"; get_value();
-showselectstation = "Mikawashima"; get_value();
-showselectstation = "Minamisenju"; get_value();
+if (selectstation == "menu-1"){
+showselectstation = "Tokyo"; get_value();
+showselectstation = "Yurakucho"; get_value();
+showselectstation = "Shimbashi"; get_value();
+showselectstation = "hamamatsucho"; get_value();
+showselectstation = "Tamachi"; get_value();
 initialize();
 }
 
 //menu-2
-if (selectstation == "jmenu-2"){
-showselectstation = "Kitasenju"; get_value();
-showselectstation = "Matsudo"; get_value();
+if (selectstation == "menu-2"){
+showselectstation = "Shinagawa"; get_value();
+showselectstation = "Osaki"; get_value();
+showselectstation = "Gotanda"; get_value();
+showselectstation = "Meguro"; get_value();
+showselectstation = "Ebisu"; get_value();
 initialize();
 }
 
 //menue-3
-if (selectstation == "jmenu-3"){
-showselectstation = "Kasiwa"; get_value();
-showselectstation = "Abiko"; get_value();
-showselectstation = "Tennoudai"; get_value();//?
+if (selectstation == "menu-3"){
+showselectstation = "Shibuya"; get_value();
+showselectstation = "Harajyuku"; get_value();
+showselectstation = "Yoyogi"; get_value();
 initialize();
 }
 
 //menue-4
-if (selectstation == "jmenu-4"){
-showselectstation = "Toride"; get_value();
-showselectstation = "Fujishiro"; get_value();
-showselectstation = "Sanuki"; get_value();
+if (selectstation == "menu-4"){
+showselectstation = "Shinjuku"; get_value();
+showselectstation = "ShinOkubo"; get_value();
+showselectstation = "Takadanobaba"; get_value();
+showselectstation = "Mejiro"; get_value();
 initialize();
 }
 
 //menue-5
-if (selectstation == "jmenu-5"){
-showselectstation = "Ushiku"; get_value();
-showselectstation = "HitachinoUshiku"; get_value();
-showselectstation = "Tsuchiura"; get_value();
+if (selectstation == "menu-5"){
+showselectstation = "Ikebukuro"; get_value();
+showselectstation = "Otsuka"; get_value();
+showselectstation = "Sugamo"; get_value();
+showselectstation = "Komagome"; get_value();
+showselectstation = "Tabata"; get_value();
+showselectstation = "NishiNippori"; get_value();
+showselectstation = "Nippori"; get_value();
+showselectstation = "Uguisudani"; get_value();
 initialize();
 }
 
@@ -393,36 +411,46 @@ testhugedelaycount = 0.0;
             DD = new Date();  //現在時刻の取得
             Hours = DD.getHours();
             var hour = Number(Hours) ;
-            // hour = 1;//テスト用
+            hour = 10;//テスト用
             //方向部分は作り直し
-            var direction = "Outbound";
-            var direction2 = "Inbound";
+            var direction = "OuterLoop";
+            var direction2 = "InnerLoop";
             var classifier = hour + ', "' + showselectstation +'", "' + direction + '"' ;  //
 
-            for(key in jobtestdelay){
+            for(key in yamdelay){
                 tmpi = key;
                 tmpi = tmpi.replace("[","");
                 tmpi = tmpi.replace("]","");
+                // console.log(tmpi);
+                // console.log(classifier);
                 if(tmpi == classifier){
-                     testdelaycount = jobtestdelay[key];
-                     for (key in jobtest){
+                     testdelaycount = yamdelay[key];
+                     // console.log("keyは",tmpi);
+                     //     console.log("識別器は",classifier);
+                     // console.log(yamdelay[key]);
+                     for (key in yam){
                         tmpj = key;
                         tmpj = tmpj.replace("[","");
                         tmpj = tmpj.replace("]","");
                         if (tmpj == classifier){
-                        testcount = jobtest[key];
+                        testcount = yam[key];
+                         console.log("keyは",tmpj);
+                         console.log("識別器は",classifier);
+                         console.log(yamhugedelay[key]);
                         }
                      }
                 }
             }
 
-            for(key in jobtesthugedelay){
+            for(key in yamhugedelay){
                 tmpi = key;
                 tmpi = tmpi.replace("[","");
                 if (tmpi.match(classifier)){
-                     testhugedelaycount = jobtesthugedelay[key];
+                     testhugedelaycount = yamhugedelay[key];
                 }
             }
+            // console.log(testcount);
+            // console.log(testdelaycount);
 
             sum = sum + testcount
             sums = sums + testdelaycount
@@ -450,15 +478,15 @@ function initialize(){
 }
 
 </SCRIPT>
-
-
-
-
-
     <div class="wrap">
       <h1>Delay Prediction</h1>
       <h2>long time</h2>
-      <h3>Short time</h3>
+      <h3>Short time
+   <!--      <SCRIPT language="JavaScript">
+            document.write(gon.weather);
+        </SCRIPT> -->
+
+      </h3>
       <h4>
         <SCRIPT language="JavaScript">
             tmpresult = testresulth.toFixed(1);
@@ -483,5 +511,3 @@ function initialize(){
         </div>
       </div>
     </div>
-  </body>
-</html>
