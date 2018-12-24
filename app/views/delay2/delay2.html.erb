@@ -490,12 +490,14 @@ function initialize(){
       <h4>
         <SCRIPT language="JavaScript">
             tmpresult = testresulth.toFixed(1);
+            tmpresult = tmpresult * gon.mag;//天気で倍率
             document.write(tmpresult,"%");
         </SCRIPT>
     </h4>
     <h5>
         <SCRIPT language="JavaScript">
             tmpresult = testresult.toFixed(1);
+            tmpresult = tmpresult * gon.mag;//天気で倍率
             document.write(tmpresult,"%");
         </SCRIPT>
     </h5>
@@ -511,3 +513,4 @@ function initialize(){
         </div>
       </div>
     </div>
+
