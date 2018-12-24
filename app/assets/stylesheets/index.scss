@@ -57,10 +57,10 @@ aaa{
   position: fixed;
   background-color: black;
   height: 100%;
-  width: 45px;
+  width: 7.2vh;
   float: left;
   // left: 43%;
-  left: 161px;
+  left: 43.2%;
   z-index: 3;
   /*clear: both;*/
 }
@@ -68,7 +68,7 @@ aaa{
   // background-color: #388E3C;
   background-color: #6AC1B7;
   height: 100%;
-  width: 30px;
+  width: 4.8vh;
   float: left;
   position: fixed;
   left: 45%;
@@ -80,10 +80,10 @@ aaa{
 .vcenterlinewhite{
   background-color: white;
   height: 100%;
-  width: 5.6vh;
+  width: 5.4vh;
   float: left;
   position: fixed;
-  left: 44%;
+  left: 44.5%;
   z-index: 4;
   /*clear: both;*/
 }
@@ -132,7 +132,7 @@ h10{
   font-size: 22px;
   position: absolute;
   // top: 4px;
-  left: 14px;
+  left: 2vh;
   padding-top: 5px;
 }
 
@@ -141,7 +141,7 @@ h11{
   font-size: 22px;
   position: absolute;
   // top: 10%;
-  left: 13px;
+  left: 2vh;
   padding-top: 5px;
 }
 
@@ -160,8 +160,8 @@ li {
   // clear: both;
   // position: absolute;
   // float: right;
-  right: -20px;
-  width: 219px;
+  right: 2.4vh;
+  width: 33vh;
 //   z-index: 20;
   overflow: scroll;
  }
@@ -177,7 +177,7 @@ color: #DFEFED;
 
 maru{
 position: absolute;
-left:174px;
+left:45.8%;
 top:202px;
 font-size: 24px;
 z-index: 500;
@@ -185,7 +185,7 @@ color: #DFEFED;
 }
 
 .stationautoscroll{
-  height: 167vw;
+  height: 640px;
   overflow: scroll;
   position: fixed;
 }
