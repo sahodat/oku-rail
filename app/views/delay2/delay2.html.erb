@@ -3,7 +3,6 @@
       <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-
     <SCRIPT language="JavaScript">
     window.onload = function () {
 
@@ -35,9 +34,7 @@
           _.forEach(that.items, function(d, i){
             d.find('a').on('click', function(){
               var url = $(this).attr('href');
-
               that.goto(url);
-
               return false;
             });
           });
@@ -279,12 +276,17 @@
           console.log('CHANGE');
         },
         onChangeComplete: function(d) {
-          console.log('CHANGE_COMPLETE')
-          console.log(d)
+          console.log('CHANGE_COMPLETE');
         }
       };
 
-      var circleMenu = new CircleMenu($('#my-circle-menu'), DATA, SELECTED, OPTIONS, FUNC);
+
+
+
+
+
+
+      var circleMenu = new CircleMenu($('#my-circle-menu'), DATA, SELECTED, OPTIONS, FUNC,);
     });
     }
     </SCRIPT>
@@ -333,9 +335,9 @@ console.log(selectstation);
 var yam = gon.yam;
 var yamdelay = gon.yamdelay;
 var yamhugedelay = gon.yamhugedelay;
-console.log(yam);
-console.log(yamdelay);
-console.log(yamhugedelay);
+// console.log(yam);
+// console.log(yamdelay);
+// console.log(yamhugedelay);
 
 testcount = 0.0;
 testdelaycount = 0.0;
