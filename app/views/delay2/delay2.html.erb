@@ -492,6 +492,9 @@ function initialize(){
             tmpresult = testresulth.toFixed(1);
             tmpresult = tmpresult * gon.mag;//天気で倍率
             tmpresult = tmpresult.toFixed(1);
+            if (tmpresult > 100){
+            tmpresult = 100.0;
+            };
 
             document.write(tmpresult,"%");
         </SCRIPT>
@@ -501,6 +504,9 @@ function initialize(){
             tmpresult = testresult.toFixed(1);
             tmpresult = tmpresult * gon.mag;//天気で倍率
             tmpresult = tmpresult.toFixed(1);
+            if (tmpresult > 100){
+            tmpresult = 100.0;
+            };
 
             document.write(tmpresult,"%");
         </SCRIPT>

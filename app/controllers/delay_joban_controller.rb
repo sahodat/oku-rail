@@ -20,7 +20,7 @@ class DelayJobanController < ApplicationController
     result = JSON.parse(json)
     tmpresult = result['forecasts'][0]
     showweather = tmpresult['telop']
-    p "今日の天気は" + showweather
+    # p "今日の天気は" + showweather
     checkweather = showweather.include?("晴")
     if checkweather == true then
       gon.mag = 1.1
