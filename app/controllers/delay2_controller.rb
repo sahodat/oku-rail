@@ -25,6 +25,8 @@ class Delay2Controller < ApplicationController
     checkweather = showweather.include?("晴")
     if checkweather == true then
       gon.mag = 1.1
+    else
+      gon.mag = 1.0
     end
     # gon.mag = 1.1
   end
