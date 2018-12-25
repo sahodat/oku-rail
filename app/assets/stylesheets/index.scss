@@ -158,13 +158,14 @@ li {
 
 .right{
   // clear: both;
-  zposition: absolute;
-  // float: right;
+  position: absolute;
+  float: right;
   right: 2.4vh;
   width: 33vh;
 //   z-index: 20;
   overflow: scroll;
  }
+
 
 resultbutton{
 position: absolute;
@@ -187,7 +188,7 @@ color: white;
 .stationautoscroll{
   height: 640px;
   overflow: scroll;
-  position: fixed;
+  //position: fixed;
 }
 
 // .scroll{
