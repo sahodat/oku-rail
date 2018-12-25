@@ -4,7 +4,7 @@
   height: 82.5vh;
   border: solid 3px;
   left: -65vh;
-  top: 32vh;
+  top: 26vh;
   // transform:rotate(-30deg);
   -khtml-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -63,8 +63,8 @@
 }
 .cm-container .cm-selected-container {
   position: absolute;
-  width: 15vh;
-  height: 15vh;
+  width: 17vh;
+  height: 17vh;
   border: solid 0.6vh;
   -khtml-border-radius: 100%;
   -webkit-border-radius: 100%;
@@ -79,8 +79,9 @@
   box-sizing: border-box;
 }
 .cm-container .cm-selected-container .cm-selected-label {
-  height: 11vh;
-  width: 11vh;
+  height: 13vh;
+  width: 13vh;
+  font-size: 10px;
   overflow: hidden;
   font-weight: 700;
   // color: #6AC1B7;
@@ -139,34 +140,34 @@ li2{
 }
 
 h1{
-  top: 8vh;
+  top: 4vh;
 }
 
 h2{
 color: #454545;
 font-size: 20px;
 position: absolute;
-top: 30vh;
+top: 26vh;
 left:20vw;
 }
 h3{
 color: #454545;
 font-size: 20px;
 position: absolute;
-top: 30vh;
+top: 26vh;
 right: 20vw;
 }
 h4{
 color: #454545;
 font-size: 30px;
 position: absolute;
-top: 19vh;
+top: 14vh;
 left: 24vw;
 }
 h5{
 color: #454545;
 font-size: 30px;
 position: absolute;
-top: 17vh;
+top: 13vh;
 right: 24vw;
 }
