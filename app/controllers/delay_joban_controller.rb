@@ -21,7 +21,7 @@ class DelayJobanController < ApplicationController
     tmpresult = result['forecasts'][0]
     showweather = tmpresult['telop']
     # p "今日の天気は" + showweather
-    checkweather = showweather.include?("晴")
+    checkweather = showweather.include?("雨")
     if checkweather == true then
       gon.mag = 1.1
     else
