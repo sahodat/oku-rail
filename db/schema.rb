@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_29_033926) do
+ActiveRecord::Schema.define(version: 2018_12_26_003010) do
+
+  create_table "cal_result_yamates", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.integer "station_group"
+    t.integer "this_hour"
+    t.integer "small_delay"
+    t.integer "huge_delay"
+    t.integer "this_count"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "opdt_jobans", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "o_id"
